@@ -9,51 +9,69 @@
 :root {
   --body_content_width: 1100px;
 }
-
-h1 {
-  font-size: 40px;
-  font-weight: 900;
+a{
+  text-decoration: none;
+  color: #2c2c2c;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-header {
-  display: flex;
-  justify-content: center;
+
+nav{
   position: fixed;
-  top: 0;
+  z-index: 10;
+  top:0;
   left: 0;
-  height: 46px;
-  width: 100vw;
-  background: white;
-  z-index: 1;
-}
-.container_header {
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  max-width: var(--body_content_width);
   width: 100%;
+}
+nav figure{
+  margin: 0;
 }
 nav ul {
   display: flex;
+  justify-content: space-between;
+  width: 30%;
 }
 nav ul li {
-  width: max-content;
-  margin-left: 10px;
   list-style-type: none;
   cursor: pointer;
 }
-nav ul li:hover {
+nav ul li a:hover {
   color: gray;
 }
+
+header {
+  position: relative;
+  top:0;
+  left: 0;
+  height: 500px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("src/banner/banner07.png" );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_banner{
+  position: relative;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 3000px;
+}
+
 /* Content */
-.container_content {
+main{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,23 +84,33 @@ nav ul li:hover {
   box-sizing: border-box;
 }
 /* container dos conteúdos */
-.nos,
-.projetos,
-.servicos {
+#nos,
+#projetos,
+#servicos {
   width: 100%;
   max-width: var(--body_content_width);
 }
-
+h1{  
+  font-size: 8rem;
+  width: 100%;
+  max-width: var(--body_content_width);
+}
+h2{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom:0;
+}
 /* nós */
-.nos h1 {
+#nos h2 {
+  margin-top: 50px;
   color: #ffc800;
 }
 /* servicos */
-.servicos h1 {
+#servicos h2 {
   color: #e87aa7;
 }
 /* projetos */
-.projetos h1 {
+#projetos h2 {
   color: #28b2ed;
 }
 
@@ -93,6 +121,7 @@ nav ul li:hover {
   align-content: flex-start;
   gap: 10px;
   height: 493px;
+  margin-top: 20px;
   width: 100%;
   background: cyan;
   overflow-y: auto;
