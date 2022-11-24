@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box !important;
+  color: #2c2c2c;
 }
 
 :root {
@@ -178,10 +179,28 @@ h2{
 
 /* footer */
 footer {
+  position: relative;
   height: 500px;
-  background-image: url("src/banner/banner02.png");
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("src/banner/banner02.png" );
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  width: calc(100vw - 17px);
 }
+.footer-container{
+  width: var(--body_content_width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container section{
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
