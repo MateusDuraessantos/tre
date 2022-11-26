@@ -1,5 +1,5 @@
 <template>
-  <header id="inicio">
+  <header>
     <nav>
       <figure>
         <img src="../assets/logoComNome.svg" />
@@ -9,7 +9,7 @@
         <li><a href="#nos">nós</a></li>
         <li><a href="#servicos">serviços</a></li>
         <li><a href="#projetos">projetos</a></li>
-        <li><a href="footer">contatos</a></li>
+        <li><a href="#footer">contatos</a></li>
       </ul>
     </nav>
   </header>
