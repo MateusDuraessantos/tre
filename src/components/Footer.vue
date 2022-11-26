@@ -5,21 +5,21 @@
         <div>
           Av. dos Carinás, 736 CEP 04089-011 São Paulo - SP
           <div>
-            <img src="src/icons/local.png" />
+            <img src="../assets/icons/local.png" />
             Localização no mapa
           </div>
         </div>
         <div>
           <div>
-            <img src="src/icons/fone.png" />
+            <img src="../assets/icons/fone.png" />
             (11) 5054 2425
           </div>
           <div>
-            <img src="src/icons/email.png" />
+            <img src="../assets/icons/email.png" />
             contato@tre.art.br
           </div>
           <div>
-            <img src="src/icons/insta.png" />
+            <img src="../assets/icons/insta.png" />
             @trecomunicacao
           </div>
         </div>
@@ -53,8 +53,7 @@
 export default {
   name: "Footer",
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div id="servicos">
-    <el-tabs v-model="primeiro" class="demo-tabs" @tab-click="handleClick">
+    <el-tabs v-model="primeiro" class="demo-tabs tabs_servicos" @tab-click="handleClick">
       <h2>serviços</h2>
       <el-tab-pane label="naming" name="primeiro"
         >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum et quis
@@ -44,5 +44,14 @@ export default {
 <style scoped>
 #servicos h2 {
   color: #e87aa7;
+}
+</style>
+
+<style>
+.tabs_servicos .el-tabs__item.is-active {
+  color: #e87aa7;
+}
+.tabs_servicos .el-tabs__active-bar {
+  background: #e87aa7;
 }
 </style>

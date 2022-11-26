@@ -24,21 +24,21 @@ export default {
 };
 </script>
 <style scoped>
-#inicio {
+header {
+  position: fixed;
   display: flex;
   justify-content: center;
   top: 0;
-  left: 0;
-  height: 46px;
+  z-index: 10;
+  height: 60px;
   padding: 0 20px;
   width: 100%;
   background-size: cover;
+  background: #f8f8f8;
 }
-
 .content_tabs {
   width: 70%;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -47,19 +47,28 @@ nav {
   width: 100%;
   max-width: var(--body_content_width);
 }
-nav figure {
+figure {
   margin: 0;
 }
-nav ul {
+
+figure img {
+  height: 50px;
+}
+
+ul {
   display: flex;
   justify-content: space-between;
-  width: 30%;
-}
-nav ul li {
+  gap: 26px;
   list-style-type: none;
   cursor: pointer;
 }
-nav ul li a:hover {
-  color: gray;
+
+ul a {
+  color: #777;
+  transition: 0.2s;
+}
+ul a:hover {
+  color: black;
+  transition: 0.2s;
 }
 </style>

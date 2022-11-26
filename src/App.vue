@@ -37,6 +37,15 @@ export default {
   box-sizing: border-box !important;
   color: black;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
 :root {
   --body_content_width: 1000px;
 }
@@ -48,14 +57,7 @@ a {
 [gap_bottom] {
   margin-bottom: 85px;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-}
+
 main {
   display: flex;
   flex-direction: column;
@@ -66,6 +68,9 @@ main {
 #servicos {
   width: 100%;
   max-width: var(--body_content_width);
+}
+.el-tab-pane {
+  color: #4d4d4d;
 }
 h1,
 h2,
