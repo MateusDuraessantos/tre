@@ -89,4 +89,20 @@ h2 {
   font-size: 40px;
   font-weight: 900;
 }
+
+/* Scroll Style */
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #B2B1B1;
+  border-radius: 20px;
+  border: 3px solid white;
+}
 </style>
