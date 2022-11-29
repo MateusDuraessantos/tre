@@ -24,14 +24,22 @@
               <div>{{ brabos.descricao }}</div>
             </div>
           </div>
+
           <el-carousel height="350px">
             <el-carousel-item
-              v-for="(brabos, index) in projetos[teste].img"
+              v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
               :key="index"
             >
-              <img class="img_size" :src="brabos.prof" />
+              <img class="img_size" :src="brabos.fotos" :key="index" />
             </el-carousel-item>
           </el-carousel>
+        </div>
+        <div class="outros">
+          <button class="changeNumber" @click="changeNumber(0)">Botão 0</button>
+          <button class="changeNumber" @click="changeNumber(1)">Botão 1</button>
+          <button class="changeNumber" @click="changeNumber(2)">Botão 2</button>
+          <button class="changeNumber" @click="changeNumber(3)">Botão 3</button>
+          <button class="changeNumber" @click="changeNumber(4)">Botão 4</button>
         </div>
       </div>
     </div>
@@ -43,6 +51,7 @@ export default {
     return {
       up: false,
       teste: "",
+      vaiIr: 0,
       projetos: [
         {
           textoMassa: [
@@ -52,11 +61,27 @@ export default {
                 "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
             },
           ],
-          profs: require("../assets/portfolios/belezaDaVila/3.png"),
-          img: [
-            { prof: require("../assets/portfolios/belezaDaVila/1.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/2.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/3.png") },
+          profs: require("../assets/portfolios/belezaDaVila/logo/2.png"),
+          algo: [
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/logo/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/logo/1.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/3.png"),
+              },
+            ],
           ],
         },
         {
@@ -68,226 +93,22 @@ export default {
             },
           ],
           profs: require("../assets/portfolios/blackDog/2.png"),
-          img: [
-            { prof: require("../assets/portfolios/blackDog/1.png") },
-            { prof: require("../assets/portfolios/blackDog/2.png") },
-            { prof: require("../assets/portfolios/blackDog/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Beleza da Vila" },
-            {
-              descricao:
-                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
-            },
-          ],
-          profs: require("../assets/portfolios/belezaDaVila/2.png"),
-          img: [
-            { prof: require("../assets/portfolios/belezaDaVila/1.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/2.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Canon" },
-            {
-              descricao:
-                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
-            },
-          ],
-          profs: require("../assets/portfolios/canon/2.png"),
-          img: [
-            { prof: require("../assets/portfolios/canon/1.png") },
-            { prof: require("../assets/portfolios/canon/2.png") },
-            { prof: require("../assets/portfolios/canon/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Accesstage" },
-            {
-              descricao:
-                "Empresa que em sua fundação foi subsidiária do grupo Mitsubishi e atua em Tecnologia voltada para o mercado financeiro. Fomos responsáveis em fazer a migração e o reposicionamento desta empresa para consolidar a marca para seu mercado, atualizar o lettering, símbolo e sua voz foram algumas das táticas da estratégia de identidade de marca. Também adentramos em atividades de comunicação para área comercial e o DH (desenvolvimento Humano) como o projeto OPEN e as campanhas de vendas, também atuamos no alinhamento (retrofit) dos ambientes da empresa em parceria com a área de arquitetura.",
-            },
-          ],
-          profs: require("../assets/portfolios/accesstage/3.png"),
-          img: [
-            { prof: require("../assets/portfolios/accesstage/1.png") },
-            { prof: require("../assets/portfolios/accesstage/2.png") },
-            { prof: require("../assets/portfolios/accesstage/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Beleza da Vila" },
-            {
-              descricao:
-                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
-            },
-          ],
-          profs: require("../assets/portfolios/belezaDaVila/1.png"),
-          img: [
-            { prof: require("../assets/portfolios/belezaDaVila/1.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/2.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Blackdog" },
-            {
-              descricao:
-                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
-            },
-          ],
-          profs: require("../assets/portfolios/blackDog/5.png"),
-          img: [
-            { prof: require("../assets/portfolios/blackDog/1.png") },
-            { prof: require("../assets/portfolios/blackDog/2.png") },
-            { prof: require("../assets/portfolios/blackDog/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Canon" },
-            {
-              descricao:
-                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
-            },
-          ],
-          profs: require("../assets/portfolios/canon/1.png"),
-          img: [
-            { prof: require("../assets/portfolios/canon/1.png") },
-            { prof: require("../assets/portfolios/canon/2.png") },
-            { prof: require("../assets/portfolios/canon/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Accesstage" },
-            {
-              descricao:
-                "Empresa que em sua fundação foi subsidiária do grupo Mitsubishi e atua em Tecnologia voltada para o mercado financeiro. Fomos responsáveis em fazer a migração e o reposicionamento desta empresa para consolidar a marca para seu mercado, atualizar o lettering, símbolo e sua voz foram algumas das táticas da estratégia de identidade de marca. Também adentramos em atividades de comunicação para área comercial e o DH (desenvolvimento Humano) como o projeto OPEN e as campanhas de vendas, também atuamos no alinhamento (retrofit) dos ambientes da empresa em parceria com a área de arquitetura.",
-            },
-          ],
-          profs: require("../assets/portfolios/accesstage/1.png"),
-          img: [
-            { prof: require("../assets/portfolios/accesstage/1.png") },
-            { prof: require("../assets/portfolios/accesstage/2.png") },
-            { prof: require("../assets/portfolios/accesstage/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Blackdog" },
-            {
-              descricao:
-                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
-            },
-          ],
-          profs: require("../assets/portfolios/blackDog/1.png"),
-          img: [
-            { prof: require("../assets/portfolios/blackDog/1.png") },
-            { prof: require("../assets/portfolios/blackDog/2.png") },
-            { prof: require("../assets/portfolios/blackDog/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Canon" },
-            {
-              descricao:
-                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
-            },
-          ],
-          profs: require("../assets/portfolios/canon/1.png"),
-          img: [
-            { prof: require("../assets/portfolios/canon/1.png") },
-            { prof: require("../assets/portfolios/canon/2.png") },
-            { prof: require("../assets/portfolios/canon/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Accesstage" },
-            {
-              descricao:
-                "Empresa que em sua fundação foi subsidiária do grupo Mitsubishi e atua em Tecnologia voltada para o mercado financeiro. Fomos responsáveis em fazer a migração e o reposicionamento desta empresa para consolidar a marca para seu mercado, atualizar o lettering, símbolo e sua voz foram algumas das táticas da estratégia de identidade de marca. Também adentramos em atividades de comunicação para área comercial e o DH (desenvolvimento Humano) como o projeto OPEN e as campanhas de vendas, também atuamos no alinhamento (retrofit) dos ambientes da empresa em parceria com a área de arquitetura.",
-            },
-          ],
-          profs: require("../assets/portfolios/accesstage/1.png"),
-          img: [
-            { prof: require("../assets/portfolios/accesstage/1.png") },
-            { prof: require("../assets/portfolios/accesstage/2.png") },
-            { prof: require("../assets/portfolios/accesstage/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Beleza da Vila" },
-            {
-              descricao:
-                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
-            },
-          ],
-          profs: require("../assets/portfolios/belezaDaVila/3.png"),
-          img: [
-            { prof: require("../assets/portfolios/belezaDaVila/1.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/2.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Blackdog" },
-            {
-              descricao:
-                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
-            },
-          ],
-          profs: require("../assets/portfolios/blackDog/2.png"),
-          img: [
-            { prof: require("../assets/portfolios/blackDog/1.png") },
-            { prof: require("../assets/portfolios/blackDog/2.png") },
-            { prof: require("../assets/portfolios/blackDog/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Beleza da Vila" },
-            {
-              descricao:
-                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
-            },
-          ],
-          profs: require("../assets/portfolios/belezaDaVila/2.png"),
-          img: [
-            { prof: require("../assets/portfolios/belezaDaVila/1.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/2.png") },
-            { prof: require("../assets/portfolios/belezaDaVila/3.png") },
-          ],
-        },
-        {
-          textoMassa: [
-            { title: "Canon" },
-            {
-              descricao:
-                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
-            },
-          ],
-          profs: require("../assets/portfolios/canon/2.png"),
-          img: [
-            { prof: require("../assets/portfolios/canon/1.png") },
-            { prof: require("../assets/portfolios/canon/2.png") },
-            { prof: require("../assets/portfolios/canon/3.png") },
+          algo: [
+            [
+              { fotos: require("../assets/portfolios/blackDog/1.png") },
+              { fotos: require("../assets/portfolios/blackDog/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/3.png") },
+            ],
           ],
         },
       ],
     };
   },
   methods: {
+    changeNumber(n) {
+      this.vaiIr = n;
+      console.log(this.vaiIr);
+    },
     pop(n) {
       this.up = !this.up;
       this.teste = n;
@@ -339,10 +160,10 @@ h3 {
 .pop_content {
   position: relative;
   background: white;
-  /* height: 500px; */
   width: 100vw;
   max-width: 900px;
   border-radius: 8px;
+  padding: 40px;
 }
 .close {
   position: absolute;
@@ -364,7 +185,7 @@ h3 {
 
 .grid_prof {
   display: grid;
-  padding: 40px;
+
   gap: 20px;
   grid-template-columns: 1fr 1.5fr;
 }
@@ -372,5 +193,23 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.outros {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.changeNumber {
+  cursor: pointer;
+  border-radius: 6px;
+  height: 150px;
+  width: 100%;
+  border: 4px solid rgba(0, 0, 0, 0);
+}
+
+.changeNumber:hover {
+  border: 4px solid #ffc800;
 }
 </style>
