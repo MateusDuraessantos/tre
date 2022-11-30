@@ -25,21 +25,33 @@
             </div>
           </div>
 
-          <el-carousel height="350px">
-            <el-carousel-item
-              v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
-              :key="index"
-            >
-              <img class="img_size" :src="brabos.fotos" :key="index" />
-            </el-carousel-item>
-          </el-carousel>
+          <span>
+            <el-carousel height="350px">
+              <el-carousel-item
+                v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
+                :key="index"
+              >
+                <img class="img_size" :src="brabos.fotos" :key="index" />
+              </el-carousel-item>
+            </el-carousel>
+          </span>
         </div>
+        <h4>Outros projetos</h4>
         <div class="outros">
-          <button class="changeNumber" @click="changeNumber(0)">Botão 0</button>
-          <button class="changeNumber" @click="changeNumber(1)">Botão 1</button>
-          <button class="changeNumber" @click="changeNumber(2)">Botão 2</button>
-          <button class="changeNumber" @click="changeNumber(3)">Botão 3</button>
-          <button class="changeNumber" @click="changeNumber(4)">Botão 4</button>
+          <button
+            class="trocarProjeto"
+            @click="changeNumber(index)"
+            v-for="(brabos, index) in projetos[teste].algo"
+            :key="index"
+          >
+            <img
+              class="trocarProjeto--img"
+              :src="braboss"
+              alt=""
+              v-for="(braboss, index) in brabos[0]"
+              :key="index"
+            />
+          </button>
         </div>
       </div>
     </div>
@@ -50,9 +62,10 @@ export default {
   data() {
     return {
       up: false,
-      teste: "",
+      teste: 0,
       vaiIr: 0,
       projetos: [
+        /* Beleza da Vila */
         {
           textoMassa: [
             { title: "Beleza da Vila" },
@@ -61,14 +74,15 @@ export default {
                 "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
             },
           ],
-          profs: require("../assets/portfolios/belezaDaVila/logo/2.png"),
+
+          profs: require("../assets/portfolios/belezaDaVila/logo/1.png"),
           algo: [
             [
               {
-                fotos: require("../assets/portfolios/belezaDaVila/logo/2.png"),
+                fotos: require("../assets/portfolios/belezaDaVila/logo/1.png"),
               },
               {
-                fotos: require("../assets/portfolios/belezaDaVila/logo/1.png"),
+                fotos: require("../assets/portfolios/belezaDaVila/logo/2.png"),
               },
             ],
             [
@@ -82,8 +96,26 @@ export default {
                 fotos: require("../assets/portfolios/belezaDaVila/redesSociais/3.png"),
               },
             ],
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/4.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/5.png"),
+              },
+            ],
           ],
         },
+        /* Blackdog */
         {
           textoMassa: [
             { title: "Blackdog" },
@@ -92,12 +124,99 @@ export default {
                 "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
             },
           ],
-          profs: require("../assets/portfolios/blackDog/2.png"),
+          profs: require("../assets/portfolios/blackDog/marca/1.png"),
           algo: [
             [
-              { fotos: require("../assets/portfolios/blackDog/1.png") },
-              { fotos: require("../assets/portfolios/blackDog/2.png") },
-              { fotos: require("../assets/portfolios/blackDog/3.png") },
+              {
+                fotos: require("../assets/portfolios/blackDog/marca/1.png"),
+              },
+              { fotos: require("../assets/portfolios/blackDog/marca/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/marca/3.png") },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/cardapios/1.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/4.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/4.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/5.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/6.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/7.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/mesaedisplay/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/mesaedisplay/2.png"),
+              },
+            ],
+            [
+              { fotos: require("../assets/portfolios/blackDog/site/1.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/3.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/4.png") },
+            ],
+            [
+              { fotos: require("../assets/portfolios/blackDog/marca/1.png") },
+              { fotos: require("../assets/portfolios/blackDog/marca/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/marca/3.png") },
+            ],
+          ],
+        },
+        /*  */
+        {
+          textoMassa: [
+            { title: "Blackdog" },
+            {
+              descricao:
+                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
+            },
+          ],
+          profs: require("../assets/portfolios/canon/boletins/1.png"),
+          algo: [
+            [
+              { fotos: require("../assets/portfolios/canon/anuncios/1.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/2.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/3.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/4.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/5.png") },
+            ],
+            [
+              { fotos: require("../assets/portfolios/canon/boletins/1.png") },
+              { fotos: require("../assets/portfolios/canon/boletins/2.png") },
             ],
           ],
         },
@@ -156,14 +275,15 @@ h3 {
   height: 100vh;
   z-index: 20;
 }
-
 .pop_content {
   position: relative;
   background: white;
   width: 100vw;
   max-width: 900px;
+
   border-radius: 8px;
   padding: 40px;
+  overflow-y: scroll;
 }
 .close {
   position: absolute;
@@ -177,15 +297,12 @@ h3 {
   transition: 0.2s;
   cursor: pointer;
 }
-
 .close:hover {
   opacity: 0.7;
   transition: 0.2s;
 }
-
 .grid_prof {
   display: grid;
-
   gap: 20px;
   grid-template-columns: 1fr 1.5fr;
 }
@@ -194,22 +311,26 @@ h3 {
   height: 100%;
   object-fit: contain;
 }
-
 .outros {
   display: flex;
   margin-top: 30px;
-  gap: 20px;
 }
-
-.changeNumber {
+.trocarProjeto {
   cursor: pointer;
-  border-radius: 6px;
+  padding: 0;
+  border: none;
   height: 150px;
-  width: 100%;
-  border: 4px solid rgba(0, 0, 0, 0);
+  width: 150px;
+  outline: 6px solid rgba(0, 0, 0, 0);
+  border-radius: 6px;
 }
-
-.changeNumber:hover {
-  border: 4px solid #ffc800;
+.trocarProjeto:hover {
+  outline: 6px solid #ffc800;
+  z-index: 2;
+}
+.trocarProjeto--img {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
 }
 </style>
