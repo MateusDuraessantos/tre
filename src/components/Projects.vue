@@ -4,7 +4,7 @@
 
     <div class="content_projetos">
       <div v-for="(projetosAll, index) in projetos" :key="index">
-        <img class="thumb" :src="projetosAll.profs" @click="pop(index)" />
+        <img class="thumb" :src="projetosAll.thumb" @click="pop(index)" />
       </div>
     </div>
 
@@ -26,7 +26,14 @@
           </div>
 
           <span>
-            <el-carousel height="350px">
+            <h4
+              v-for="(brabos, index) in projetos[teste].titulosCarrossel[vaiIr]"
+              :key="index"
+            >
+              {{ brabos }}
+            </h4>
+
+            <el-carousel height="450px">
               <el-carousel-item
                 v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
                 :key="index"
@@ -38,20 +45,18 @@
         </div>
         <h4>Outros projetos</h4>
         <div class="outros">
-          <button
-            class="trocarProjeto"
-            @click="changeNumber(index)"
+          <div
+            @click="changeNumber(index), borda()"
             v-for="(brabos, index) in projetos[teste].algo"
             :key="index"
           >
             <img
-              class="trocarProjeto--img"
+              class="trocarProjeto"
               :src="braboss"
-              alt=""
               v-for="(braboss, index) in brabos[0]"
               :key="index"
             />
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -65,8 +70,16 @@ export default {
       teste: 0,
       vaiIr: 0,
       projetos: [
-        /* Beleza da Vila */
+        /* Projeto Beleza da Vila */
         {
+          titulosCarrossel: [
+            /* titulosCarrossel
+            1° - Titulo que vai em cima do carrosseis.
+            2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de "algo". */
+            { titlex: "Marca Beleza da Vila" },
+            { titlex: "Site e redes sociais" },
+            { titlex: "Aplicações" },
+          ],
           textoMassa: [
             { title: "Beleza da Vila" },
             {
@@ -74,8 +87,7 @@ export default {
                 "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
             },
           ],
-
-          profs: require("../assets/portfolios/belezaDaVila/logo/1.png"),
+          thumb: require("../assets/portfolios/belezaDaVila/logo/1.png"),
           algo: [
             [
               {
@@ -115,8 +127,16 @@ export default {
             ],
           ],
         },
-        /* Blackdog */
+        /* Projeto Blackdog */
         {
+          titulosCarrossel: [
+            { titlex: "Marca" },
+            { titlex: "Cardápios" },
+            { titlex: "Cartazes e cupons" },
+            { titlex: "Embalagens para lanches" },
+            { titlex: "Mesa e display" },
+            { titlex: "Site" },
+          ],
           textoMassa: [
             { title: "Blackdog" },
             {
@@ -124,7 +144,7 @@ export default {
                 "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
             },
           ],
-          profs: require("../assets/portfolios/blackDog/marca/1.png"),
+          thumb: require("../assets/portfolios/blackDog/marca/1.png"),
           algo: [
             [
               {
@@ -189,23 +209,22 @@ export default {
               { fotos: require("../assets/portfolios/blackDog/site/3.png") },
               { fotos: require("../assets/portfolios/blackDog/site/4.png") },
             ],
-            [
-              { fotos: require("../assets/portfolios/blackDog/marca/1.png") },
-              { fotos: require("../assets/portfolios/blackDog/marca/2.png") },
-              { fotos: require("../assets/portfolios/blackDog/marca/3.png") },
-            ],
           ],
         },
-        /*  */
+        /* Projeto Canon */
         {
+          titulosCarrossel: [
+            { titlex: "Canon anúncios" },
+            { titlex: "Canon boletins" },
+          ],
           textoMassa: [
-            { title: "Blackdog" },
+            { title: "Canon" },
             {
               descricao:
-                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
+                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
             },
           ],
-          profs: require("../assets/portfolios/canon/boletins/1.png"),
+          thumb: require("../assets/portfolios/canon/boletins/1.png"),
           algo: [
             [
               { fotos: require("../assets/portfolios/canon/anuncios/1.png") },
@@ -217,6 +236,40 @@ export default {
             [
               { fotos: require("../assets/portfolios/canon/boletins/1.png") },
               { fotos: require("../assets/portfolios/canon/boletins/2.png") },
+            ],
+          ],
+        },
+        /* Projeto Abrinq */
+        {
+          titulosCarrossel: [
+            { titlex: "Abrinq" },
+            { titlex: "MAIOR idade penal" },
+          ],
+          textoMassa: [
+            { title: "Blackdog" },
+            {
+              descricao:
+                "Abrinq é uma instituição que tem como missão incentivar e fazer cumprir as leis relacionadas ao estatuto da criança e do adolescente, somos empresa amiga da criança desde 2005 e desta forma trabalhar com a Abrinq foi muito natural, sempre desenvolvendo estratégias de comunicação e design para dar suporte às suas atividades e ações sociais.",
+            },
+          ],
+          thumb: require("../assets/portfolios/abrinq/abrinq/1.png"),
+          algo: [
+            [
+              { fotos: require("../assets/portfolios/abrinq/abrinq/1.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/2.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/3.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/4.png") },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/3.png"),
+              },
             ],
           ],
         },
@@ -244,6 +297,12 @@ h2 {
 
 h3 {
   font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 14px;
 }
 .content_projetos {
   display: grid;
@@ -279,16 +338,14 @@ h3 {
   position: relative;
   background: white;
   width: 100vw;
-  max-width: 900px;
-
-  border-radius: 8px;
+  max-width: var(--body_content_width);
   padding: 40px;
   overflow-y: scroll;
 }
 .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 16px;
+  right: 3px;
   background: none;
   border: none;
   width: 30px;
@@ -304,29 +361,33 @@ h3 {
 .grid_prof {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 450px;
 }
 .img_size {
-  width: 100%;
+  width: 450px;
   height: 100%;
   object-fit: contain;
 }
 .outros {
   display: flex;
   margin-top: 30px;
+  gap: 6px;
 }
 .trocarProjeto {
   cursor: pointer;
   padding: 0;
   border: none;
   height: 150px;
-  width: 150px;
+  width: 100%;
+  object-fit: cover;
   outline: 6px solid rgba(0, 0, 0, 0);
-  border-radius: 6px;
+  transition: 0.3s;
 }
-.trocarProjeto:hover {
+.trocarProjeto:hover,
+.trocarProjeto:focus {
   outline: 6px solid #ffc800;
-  z-index: 2;
+  transition: 0s;
+  border-radius: 6px;
 }
 .trocarProjeto--img {
   width: 100%;
