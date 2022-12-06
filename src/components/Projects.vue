@@ -69,13 +69,11 @@ export default {
       up: false,
       teste: 0,
       vaiIr: 0,
-      projetos: [
-        /* Projeto Beleza da Vila */
+      projetos: /* BELEZA DA VILA */ [
         {
           titulosCarrossel: [
-            /* titulosCarrossel
-            1° - Titulo que vai em cima do carrosseis.
-            2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de "algo". */
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de "algo".
             { titlex: "Marca Beleza da Vila" },
             { titlex: "Site e redes sociais" },
             { titlex: "Aplicações" },
@@ -87,8 +85,11 @@ export default {
                 "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
             },
           ],
-          thumb: require("../assets/portfolios/belezaDaVila/logo/1.png"),
+
+          thumb: require("../assets/portfolios/belezaDaVila/logo/1.png"), // Thumbnail do projeto
           algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
             [
               {
                 fotos: require("../assets/portfolios/belezaDaVila/logo/1.png"),
@@ -127,9 +128,11 @@ export default {
             ],
           ],
         },
-        /* Projeto Blackdog */
+
         {
-          titulosCarrossel: [
+          titulosCarrossel: /* BLACKDOG */ [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
             { titlex: "Marca" },
             { titlex: "Cardápios" },
             { titlex: "Cartazes e cupons" },
@@ -144,8 +147,10 @@ export default {
                 "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
             },
           ],
-          thumb: require("../assets/portfolios/blackDog/marca/1.png"),
+          thumb: require("../assets/portfolios/blackDog/marca/1.png"), // Thumbnail do projeto
           algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
             [
               {
                 fotos: require("../assets/portfolios/blackDog/marca/1.png"),
@@ -211,9 +216,11 @@ export default {
             ],
           ],
         },
-        /* Projeto Canon */
+        // Projeto CANON
         {
           titulosCarrossel: [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
             { titlex: "Canon anúncios" },
             { titlex: "Canon boletins" },
           ],
@@ -224,8 +231,10 @@ export default {
                 "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
             },
           ],
-          thumb: require("../assets/portfolios/canon/boletins/1.png"),
+          thumb: require("../assets/portfolios/canon/boletins/1.png"), // Thumbnail do projeto
           algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
             [
               { fotos: require("../assets/portfolios/canon/anuncios/1.png") },
               { fotos: require("../assets/portfolios/canon/anuncios/2.png") },
@@ -239,9 +248,11 @@ export default {
             ],
           ],
         },
-        /* Projeto Abrinq */
+
         {
-          titulosCarrossel: [
+          titulosCarrossel: /* ABRINQ */ [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
             { titlex: "Abrinq" },
             { titlex: "MAIOR idade penal" },
           ],
