@@ -1,11 +1,11 @@
 <template>
   <div id="servicos">
+    <h2>serviços</h2>
     <el-tabs
       v-model="primeiro"
       class="demo-tabs tabs_servicos"
       @tab-click="handleClick"
     >
-      <h2>serviços</h2>
       <el-tab-pane label="naming" name="primeiro"
         >Criação de “nomes” para empresas, produtos, serviços, entidades e até
         mesmo para pessoas públicas, faz parte da modalidade de trabalho de

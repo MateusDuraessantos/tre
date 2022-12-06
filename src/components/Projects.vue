@@ -284,6 +284,432 @@ export default {
             ],
           ],
         },
+        {
+          titulosCarrossel: [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de "algo".
+            { titlex: "Marca Beleza da Vila" },
+            { titlex: "Site e redes sociais" },
+            { titlex: "Aplicações" },
+          ],
+          textoMassa: [
+            { title: "Beleza da Vila" },
+            {
+              descricao:
+                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
+            },
+          ],
+
+          thumb: require("../assets/portfolios/belezaDaVila/aplicacoes/2.png"), // Thumbnail do projeto
+          algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/logo/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/logo/2.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/3.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/4.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/5.png"),
+              },
+            ],
+          ],
+        },
+
+        {
+          titulosCarrossel: /* BLACKDOG */ [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
+            { titlex: "Marca" },
+            { titlex: "Cardápios" },
+            { titlex: "Cartazes e cupons" },
+            { titlex: "Embalagens para lanches" },
+            { titlex: "Mesa e display" },
+            { titlex: "Site" },
+          ],
+          textoMassa: [
+            { title: "Blackdog" },
+            {
+              descricao:
+                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
+            },
+          ],
+          thumb: require("../assets/portfolios/blackDog/embalagens/1.png"), // Thumbnail do projeto
+          algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/marca/1.png"),
+              },
+              { fotos: require("../assets/portfolios/blackDog/marca/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/marca/3.png") },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/cardapios/1.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/4.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/4.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/5.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/6.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/7.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/mesaedisplay/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/mesaedisplay/2.png"),
+              },
+            ],
+            [
+              { fotos: require("../assets/portfolios/blackDog/site/1.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/3.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/4.png") },
+            ],
+          ],
+        },
+        // Projeto CANON
+        {
+          titulosCarrossel: [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
+            { titlex: "Canon anúncios" },
+            { titlex: "Canon boletins" },
+          ],
+          textoMassa: [
+            { title: "Canon" },
+            {
+              descricao:
+                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
+            },
+          ],
+          thumb: require("../assets/portfolios/canon/boletins/2.png"), // Thumbnail do projeto
+          algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
+            [
+              { fotos: require("../assets/portfolios/canon/anuncios/1.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/2.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/3.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/4.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/5.png") },
+            ],
+            [
+              { fotos: require("../assets/portfolios/canon/boletins/1.png") },
+              { fotos: require("../assets/portfolios/canon/boletins/2.png") },
+            ],
+          ],
+        },
+
+        {
+          titulosCarrossel: /* ABRINQ */ [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
+            { titlex: "Abrinq" },
+            { titlex: "MAIOR idade penal" },
+          ],
+          textoMassa: [
+            { title: "Blackdog" },
+            {
+              descricao:
+                "Abrinq é uma instituição que tem como missão incentivar e fazer cumprir as leis relacionadas ao estatuto da criança e do adolescente, somos empresa amiga da criança desde 2005 e desta forma trabalhar com a Abrinq foi muito natural, sempre desenvolvendo estratégias de comunicação e design para dar suporte às suas atividades e ações sociais.",
+            },
+          ],
+          thumb: require("../assets/portfolios/abrinq/maioridadepenal/2.png"),
+          algo: [
+            [
+              { fotos: require("../assets/portfolios/abrinq/abrinq/1.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/2.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/3.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/4.png") },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/3.png"),
+              },
+            ],
+          ],
+        },
+        {
+          titulosCarrossel: /* ABRINQ */ [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
+            { titlex: "Abrinq" },
+            { titlex: "MAIOR idade penal" },
+          ],
+          textoMassa: [
+            { title: "Blackdog" },
+            {
+              descricao:
+                "Abrinq é uma instituição que tem como missão incentivar e fazer cumprir as leis relacionadas ao estatuto da criança e do adolescente, somos empresa amiga da criança desde 2005 e desta forma trabalhar com a Abrinq foi muito natural, sempre desenvolvendo estratégias de comunicação e design para dar suporte às suas atividades e ações sociais.",
+            },
+          ],
+          thumb: require("../assets/portfolios/abrinq/maioridadepenal/3.png"),
+          algo: [
+            [
+              { fotos: require("../assets/portfolios/abrinq/abrinq/1.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/2.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/3.png") },
+              { fotos: require("../assets/portfolios/abrinq/abrinq/4.png") },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/abrinq/maioridadepenal/3.png"),
+              },
+            ],
+          ],
+        },
+        {
+          titulosCarrossel: [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de "algo".
+            { titlex: "Marca Beleza da Vila" },
+            { titlex: "Site e redes sociais" },
+            { titlex: "Aplicações" },
+          ],
+          textoMassa: [
+            { title: "Beleza da Vila" },
+            {
+              descricao:
+                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
+            },
+          ],
+
+          thumb: require("../assets/portfolios/belezaDaVila/redesSociais/3.png"), // Thumbnail do projeto
+          algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/logo/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/logo/2.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/redesSociais/3.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/4.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/belezaDaVila/aplicacoes/5.png"),
+              },
+            ],
+          ],
+        },
+
+        {
+          titulosCarrossel: [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
+            { titlex: "Canon anúncios" },
+            { titlex: "Canon boletins" },
+          ],
+          textoMassa: [
+            { title: "Canon" },
+            {
+              descricao:
+                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
+            },
+          ],
+          thumb: require("../assets/portfolios/canon/anuncios/1.png"), // Thumbnail do projeto
+          algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
+            [
+              { fotos: require("../assets/portfolios/canon/anuncios/1.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/2.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/3.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/4.png") },
+              { fotos: require("../assets/portfolios/canon/anuncios/5.png") },
+            ],
+            [
+              { fotos: require("../assets/portfolios/canon/boletins/1.png") },
+              { fotos: require("../assets/portfolios/canon/boletins/2.png") },
+            ],
+          ],
+        },
+        {
+          titulosCarrossel: /* BLACKDOG */ [
+            // 1° - [titlex]: Titulo que vai em cima do carrosseis.
+            // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
+            { titlex: "Marca" },
+            { titlex: "Cardápios" },
+            { titlex: "Cartazes e cupons" },
+            { titlex: "Embalagens para lanches" },
+            { titlex: "Mesa e display" },
+            { titlex: "Site" },
+          ],
+          textoMassa: [
+            { title: "Blackdog" },
+            {
+              descricao:
+                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
+            },
+          ],
+          thumb: require("../assets/portfolios/blackDog/marca/2.png"), // Thumbnail do projeto
+          algo: [
+            // [algo]: Todas as imagens relacionadas ao projeto
+            // Cada array contem imagens relacionadas a o projeto principal do popup
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/marca/1.png"),
+              },
+              { fotos: require("../assets/portfolios/blackDog/marca/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/marca/3.png") },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/cardapios/1.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/cartazes/4.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/2.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/3.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/4.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/5.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/6.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/embalagens/7.png"),
+              },
+            ],
+            [
+              {
+                fotos: require("../assets/portfolios/blackDog/mesaedisplay/1.png"),
+              },
+              {
+                fotos: require("../assets/portfolios/blackDog/mesaedisplay/2.png"),
+              },
+            ],
+            [
+              { fotos: require("../assets/portfolios/blackDog/site/1.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/2.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/3.png") },
+              { fotos: require("../assets/portfolios/blackDog/site/4.png") },
+            ],
+          ],
+        },
       ],
     };
   },
