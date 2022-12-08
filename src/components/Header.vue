@@ -5,10 +5,10 @@
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
-              <p>
+              <h1>
                 design é <br />
                 <span>inteligência <br /> tornada visível</span>
-              </p>
+              </h1>
             </div>
             <figure>
             <img class="img" src="../assets/banner/banner01.png" alt="Banner com folhas de bambu" />
@@ -18,11 +18,11 @@
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
-              <p>
+              <h1>
                 design aguça sua percepção, <br> gera uma nova ação sobre as coisas
                 <br />
                 <span>e modifica a realidade</span>
-              </p>
+              </h1>
             </div>
             <figure>
             <img class="img" src="../assets/banner/banner02.png" alt="Banner com circulos e folhas de palmeira" />
@@ -32,10 +32,10 @@
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
-              <p>
+              <h1>
                 tudo está em constante evolução
-                <br /><span>construir novas realidade</span>s é tarefa do design
-              </p>
+                <br /><span>construir novas realidades</span> é tarefa do design
+              </h1>
             </div>
             <figure>
             <img class="img" src="../assets/banner/banner03.png" alt="Banner com varias formas geográficas " />
@@ -45,11 +45,11 @@
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
-              <p>
+              <h1>
                 a mais de 30 anos<br />
-                <span>construíndo e auxiliando</span>
-                grandes marcas a se <br /> posicionar e encontrar <br> seu propósito
-              </p>
+                <span>construíndo e auxiliando
+                grandes marcas a se <br /> posicionar e encontrar <br> seu propósito</span>
+              </h1>
             </div>
             <figure>
             <img class="img" src="../assets/banner/banner04.png" alt="Banner com icones de varios clientes" />
@@ -110,9 +110,9 @@ export default {
 }
 
 span {
-  font-size: 32px;
+  font-size: 28px;
   display: block;
   font-weight: 600;
-  color: #4d4d4d;
+  color: #333;
 }
 </style>

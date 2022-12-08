@@ -81,7 +81,9 @@ h5 {
   margin: 0;
 }
 h1 {
-  font-size: 8rem;
+  font-size: 24px;
+  color: #4d4d4d;
+  font-weight: 400;
   width: 100%;
   max-width: var(--body_content_width);
 }
