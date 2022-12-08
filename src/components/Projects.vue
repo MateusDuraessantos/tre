@@ -1,5 +1,5 @@
 <template>
-  <div id="projetos">
+  <section id="projetos">
     <h2>projetos</h2>
 
     <div class="content_projetos">
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

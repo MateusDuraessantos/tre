@@ -1,9 +1,14 @@
 <template>
-  <footer>
-    <img class="imagem_background" src="../assets/banner/banner02.png" alt="" />
-
-    <div class="footer_container">
-      <section class="section">
+  <footer id="footer">
+    <figure>
+      <img
+        class="imagem_background"
+        src="../assets/banner/banner02.png"
+        alt="fundo branco com folhas"
+      />
+    </figure>
+    <section class="footer_container">
+      <div class="section">
         <div>
           <p>Av. dos Carinás, 736 CEP 04089-011 São Paulo - SP</p>
           <div class="contato">
@@ -25,7 +30,7 @@
             <p>@trecomunicacao</p>
           </div>
         </div>
-      </section>
+      </div>
       <form
         class="container_input"
         action="mailto:mateusduraessantos@gmail.com"
@@ -35,10 +40,10 @@
         <img class="graf" src="../assets/grafismo.svg" alt="" required />
         <input type="text" name="nome" placeholder="Nome" required />
         <input type="text" name="email" placeholder="E-mail" required />
-        <textarea class="mensagem" name="message" placeholder="Mensagem"/>
+        <textarea class="mensagem" name="message" placeholder="Mensagem" />
         <input class="enviar" type="submit" value="enviar" />
       </form>
-    </div>
+    </section>
   </footer>
 </template>
 

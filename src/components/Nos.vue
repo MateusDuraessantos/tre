@@ -1,5 +1,5 @@
 <template>
-  <div id="nos">
+  <section id="nos">
     <h2>nós</h2>
     <el-tabs
       v-model="first"
@@ -41,7 +41,7 @@
         mercado e sociedade.
       </el-tab-pane>
     </el-tabs>
-  </div>
+  </section>
 </template>
 <script>
 export default {

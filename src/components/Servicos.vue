@@ -1,5 +1,5 @@
 <template>
-  <div id="servicos">
+  <section id="servicos">
     <h2>serviços</h2>
     <el-tabs
       v-model="primeiro"
@@ -40,7 +40,7 @@
         objetivos e propósitos da marca.
       </el-tab-pane>
     </el-tabs>
-  </div>
+  </section>
 </template>
 <script>
 export default {

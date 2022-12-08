@@ -1,26 +1,26 @@
 <template>
+  <Nav />
+  <Header gap_bottom />
   <main>
-    <Header />
-    <Banner gap_bottom />
     <Nos gap_bottom />
     <Servicos gap_bottom />
     <Projects gap_bottom />
-    <Footer />
     <!-- router -->
     <router-view></router-view>
   </main>
+  <Footer />
 </template>
 
 <script>
 import Footer from "./components/Footer.vue";
+import Nav from "./components/Nav.vue";
 import Header from "./components/Header.vue";
-import Banner from "./components/Banner.vue";
 import Nos from "./components/Nos.vue";
 import Servicos from "./components/Servicos.vue";
 import Projects from "./components/Projects.vue";
 export default {
   name: "App",
-  components: { Projects, Nos, Servicos, Banner, Header, Footer },
+  components: { Projects, Nos, Servicos, Header, Nav, Footer },
   data() {
     return {
       first: "first",
@@ -101,7 +101,7 @@ h2 {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #B2B1B1;
+  background-color: #b2b1b1;
   border-radius: 20px;
   border: 3px solid white;
 }
