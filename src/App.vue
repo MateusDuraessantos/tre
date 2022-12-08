@@ -56,7 +56,7 @@ a {
 }
 
 [gap_bottom] {
-  margin-bottom: 85px;
+  margin-bottom: 20px;
 }
 
 main {
@@ -88,6 +88,7 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 900;
+  margin-top:65px;
 }
 
 /* Scroll Style */
