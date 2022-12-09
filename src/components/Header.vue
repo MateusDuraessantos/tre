@@ -1,32 +1,44 @@
 <template>
   <header class="banner" id="inicio">
     <div class="block text-center">
-      <el-carousel height="60vh">
+      <el-carousel height="60vh" arrow="always">
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
               <h1>
                 design é <br />
-                <span>inteligência <br /> tornada visível</span>
+                <span
+                  >inteligência <br />
+                  tornada visível</span
+                >
               </h1>
             </div>
             <figure>
-            <img class="img" src="../assets/banner/banner01.png" alt="Banner com folhas de bambu" />
-          </figure>
+              <img
+                class="img"
+                src="../assets/banner/banner01.png"
+                alt="Banner com folhas de bambu"
+              />
+            </figure>
           </div>
         </el-carousel-item>
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
               <h1>
-                design aguça sua percepção, <br> gera uma nova ação sobre as coisas
+                design aguça sua percepção, <br />
+                gera uma nova ação sobre as coisas
                 <br />
                 <span>e modifica a realidade</span>
               </h1>
             </div>
             <figure>
-            <img class="img" src="../assets/banner/banner02.png" alt="Banner com circulos e folhas de palmeira" />
-          </figure>
+              <img
+                class="img"
+                src="../assets/banner/banner02.png"
+                alt="Banner com circulos e folhas de palmeira"
+              />
+            </figure>
           </div>
         </el-carousel-item>
         <el-carousel-item>
@@ -38,8 +50,12 @@
               </h1>
             </div>
             <figure>
-            <img class="img" src="../assets/banner/banner03.png" alt="Banner com varias formas geográficas " />
-          </figure>
+              <img
+                class="img"
+                src="../assets/banner/banner03.png"
+                alt="Banner com varias formas geográficas "
+              />
+            </figure>
           </div>
         </el-carousel-item>
         <el-carousel-item>
@@ -47,13 +63,20 @@
             <div class="descricao_banner">
               <h1>
                 a mais de 30 anos<br />
-                <span>construíndo e auxiliando
-                grandes marcas a se <br /> posicionar e encontrar <br> seu propósito</span>
+                <span
+                  >construíndo e auxiliando grandes marcas a se <br />
+                  posicionar e encontrar <br />
+                  seu propósito</span
+                >
               </h1>
             </div>
             <figure>
-            <img class="img" src="../assets/banner/banner04.png" alt="Banner com icones de varios clientes" />
-          </figure>
+              <img
+                class="img"
+                src="../assets/banner/banner04.png"
+                alt="Banner com icones de varios clientes"
+              />
+            </figure>
           </div>
         </el-carousel-item>
       </el-carousel>
@@ -61,7 +84,7 @@
   </header>
 </template>
 <script>
-import Nav from './Nav.vue';
+import Nav from "./Nav.vue";
 export default {
   components: { Nav },
   name: "Nav",
@@ -76,8 +99,8 @@ export default {
 }
 
 .img {
-  width: 100vw;
-  height: 100%;
+  min-width: 100vw;
+  min-height: 100%;
   object-fit: cover;
 }
 

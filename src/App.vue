@@ -31,6 +31,17 @@ export default {
 </script>
 
 <style>
+.el-carousel__arrow {
+  color: gray;
+}
+
+.el-carousel__button {
+  opacity: 0.2;
+}
+.el-carousel__button {
+  background-color: black;
+}
+
 .overflowOn {
   overflow: hidden;
 }
@@ -96,7 +107,7 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 900;
-  margin-top:65px;
+  margin-top: 65px;
 }
 
 /* Scroll Style */

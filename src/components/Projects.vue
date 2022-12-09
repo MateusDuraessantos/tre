@@ -8,24 +8,25 @@
       </div>
     </div>
     <span @brabis-silizimos="borabill"></span>
-    <div class="overlay" v-if="up">
+    <!-- <div class="overlay" v-if="up"> -->
+    <div class="overlay" v-if="true">
       <div class="pop_content">
         <button class="close" @click="pop()">
           <img src="../assets/icons/close.svg" alt="" />
         </button>
         <div class="grid_prof">
-          <div>
+          <!-- 1° -->
+          <div class="grid_prof--first">
             <div
               v-for="(brabos, index) in projetos[teste].textoMassa"
               :key="index"
             >
               <h3>{{ brabos.title }}</h3>
-              <br />
-              <div>{{ brabos.descricao }}</div>
+              <div class="description--popup">{{ brabos.descricao }}</div>
             </div>
           </div>
-
-          <span>
+          <!-- 2° -->
+          <div class="grid_prof--second">
             <h4
               v-for="(brabos, index) in projetos[teste].titulosCarrossel[vaiIr]"
               :key="index"
@@ -33,15 +34,17 @@
               {{ brabos }}
             </h4>
 
-            <el-carousel>
+            <el-carousel arrow="always">
               <el-carousel-item
                 v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
                 :key="index"
               >
-                <img class="img_size" :src="brabos.fotos" :key="index" />
+                <div class="img_container">
+                  <img class="c" :src="brabos.fotos" :key="index" />
+                </div>
               </el-carousel-item>
             </el-carousel>
-          </span>
+          </div>
         </div>
         <h4>Outros projetos</h4>
         <div class="outros">
@@ -743,11 +746,13 @@ h2 {
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
   font-size: 20px;
   color: #333333;
+  margin-top: 20px;
   margin-bottom: 14px;
 }
 .content_projetos {
@@ -784,9 +789,15 @@ h4 {
   position: relative;
   background: white;
   width: 100vw;
+  width: calc(100% - 100px);
   max-width: var(--body_content_width);
+  max-height: 1000px;
+
   padding: 40px;
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+.description--popup {
+  font-size: 16px;
 }
 .close {
   position: absolute;
@@ -808,12 +819,28 @@ h4 {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 450px;
+  grid-template-areas: "f1 f2";
+}
+
+.grid_prof--first {
+  grid-area: f1;
+}
+.grid_prof--second {
+  grid-area: f2;
+}
+
+.img_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .img_size {
-  width: 450px;
   height: 100%;
+  width: 450px;
   object-fit: contain;
 }
+
 .outros {
   display: flex;
   justify-content: center;
@@ -841,15 +868,38 @@ h4 {
   object-fit: cover;
   height: 150px;
 }
-</style>
 
-<style>
-/* carrossel */
+/* RESPONSIVIDADE */
 
-.el-carousel__button {
-  opacity: 0.2;
+@media only screen and (max-width: 900px) {
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .pop_content {
+    width: calc(100% - 24px);
+    padding: 12px;
+  }
+  .description--popup {
+    font-size: 14px;
+    max-height: 150px;
+    overflow: scroll;
+  }
+  .grid_prof {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "f2 f2" "f1 f1";
+  }
 }
-.el-carousel__button {
-  background-color: black;
+@media only screen and (max-width: 450px) {
+  .outros {
+    margin: 0;
+    gap: 0px;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 </style>
