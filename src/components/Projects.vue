@@ -7,7 +7,7 @@
         <img class="thumb" :src="projetosAll.thumb" @click="pop(index)" />
       </div>
     </div>
-
+    <span @brabis-silizimos="borabill"></span>
     <div class="overlay" v-if="up">
       <div class="pop_content">
         <button class="close" @click="pop()">
@@ -33,7 +33,7 @@
               {{ brabos }}
             </h4>
 
-            <el-carousel height="450px">
+            <el-carousel>
               <el-carousel-item
                 v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
                 :key="index"
@@ -69,6 +69,7 @@ export default {
       up: false,
       teste: 0,
       vaiIr: 0,
+      brabissilizimos: "",
       projetos: /* BELEZA DA VILA */ [
         {
           titulosCarrossel: [
@@ -344,6 +345,7 @@ export default {
         },
 
         {
+          thumb: require("../assets/portfolios/blackDog/embalagens/1.png"), // Thumbnail do projeto
           titulosCarrossel: /* BLACKDOG */ [
             // 1° - [titlex]: Titulo que vai em cima do carrosseis.
             // 2° - O número de objetos "titlex" deve corresponder a ordem e a quantidade de arrays dentro de [algo].
@@ -361,7 +363,6 @@ export default {
                 "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
             },
           ],
-          thumb: require("../assets/portfolios/blackDog/embalagens/1.png"), // Thumbnail do projeto
           algo: [
             // [algo]: Todas as imagens relacionadas ao projeto
             // Cada array contem imagens relacionadas a o projeto principal do popup
@@ -713,6 +714,7 @@ export default {
       ],
     };
   },
+
   methods: {
     changeNumber(n) {
       this.vaiIr = n;
@@ -721,7 +723,14 @@ export default {
     pop(n) {
       this.up = !this.up;
       this.teste = n;
-      console.log(this.teste);
+      console.log(this.up);
+      if (this.up == true) {
+        document.body.classList.add("overflowOn");
+        // console.log("overflowOn");
+      } else {
+        document.body.classList.remove("overflowOn");
+        // console.log("overflowOff");
+      }
     },
   },
 };
@@ -807,6 +816,7 @@ h4 {
 }
 .outros {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
   gap: 6px;
 }
@@ -814,7 +824,7 @@ h4 {
   cursor: pointer;
   padding: 0;
   border: none;
-  height: 150px;
+  height: 100px;
   width: 100%;
   object-fit: cover;
   outline: 6px solid rgba(0, 0, 0, 0);
@@ -830,5 +840,16 @@ h4 {
   width: 100%;
   object-fit: cover;
   height: 150px;
+}
+</style>
+
+<style>
+/* carrossel */
+
+.el-carousel__button {
+  opacity: 0.2;
+}
+.el-carousel__button {
+  background-color: black;
 }
 </style>

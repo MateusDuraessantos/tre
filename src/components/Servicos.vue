@@ -65,4 +65,8 @@ export default {
 .tabs_servicos .el-tabs__active-bar {
   background: #e87aa7;
 }
+
+.demo-tabs .el-tab-pane {
+  height: 80px;
+}
 </style>

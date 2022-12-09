@@ -31,12 +31,14 @@ export default {
 </script>
 
 <style>
+.overflowOn {
+  overflow: hidden;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
 * {
   font-family: "Roboto", sans-serif !important;
-}
-* {
   box-sizing: border-box;
 }
 body {
@@ -46,6 +48,10 @@ body {
   padding: 0;
   padding-top: 60px;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 :root {
   --body_content_width: 900px;
