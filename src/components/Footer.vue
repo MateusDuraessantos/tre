@@ -59,6 +59,7 @@ export default {
 <style scoped>
 footer {
   position: relative;
+  margin-top: 80px;
   height: 500px;
   padding: 10px 20px;
   display: flex;

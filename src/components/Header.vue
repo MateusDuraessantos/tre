@@ -97,7 +97,7 @@ export default {
   height: 100%;
 }
 
-.descricao_banner p {
+.descricao_banner h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
