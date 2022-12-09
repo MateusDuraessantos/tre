@@ -8,8 +8,7 @@
       </div>
     </div>
     <span @brabis-silizimos="borabill"></span>
-    <!-- <div class="overlay" v-if="up"> -->
-    <div class="overlay" v-if="true">
+    <div class="overlay" v-if="up">
       <div class="pop_content">
         <button class="close" @click="pop()">
           <img src="../assets/icons/close.svg" alt="" />
