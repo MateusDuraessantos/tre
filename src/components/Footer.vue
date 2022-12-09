@@ -9,18 +9,18 @@
     </figure>
     <section class="footer_container">
       <div class="section">
-        <div>
+        <!--  <div>
           <p>Av. dos Carinás, 736 CEP 04089-011 São Paulo - SP</p>
           <div class="contato">
             <img src="../assets/icons/local.svg" />
             <p>Localização no mapa</p>
           </div>
-        </div>
+        </div> -->
         <div>
-          <div class="contato">
+          <!--  <div class="contato">
             <img src="../assets/icons/fone.svg" />
             <p>(11) 5054 2425</p>
-          </div>
+          </div> -->
           <div class="contato">
             <img src="../assets/icons/email.svg" />
             <p>contato@tre.art.br</p>

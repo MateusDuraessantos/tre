@@ -67,6 +67,6 @@ export default {
 }
 
 .demo-tabs .el-tab-pane {
-  height: 80px;
+  height: 100px;
 }
 </style>
