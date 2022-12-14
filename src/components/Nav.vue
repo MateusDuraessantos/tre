@@ -5,7 +5,7 @@
         <img src="../assets/logoComNome.svg" />
       </figure>
       <ul>
-        <li><a href="#inicio">inicio</a></li>
+        <li><a href="#inicio">início</a></li>
         <li><a href="#nos">nós</a></li>
         <li><a href="#servicos">serviços</a></li>
         <li><a href="#projetos">projetos</a></li>

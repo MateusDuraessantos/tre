@@ -14,10 +14,14 @@
             <img src="../assets/icons/email.svg" />
             <p>contato@tre.art.br</p>
           </div>
-          <div class="contato">
+          <a
+            href="https://www.instagram.com/trecomunicacao/"
+            target="blank_"
+            class="contato"
+          >
             <img src="../assets/icons/insta.svg" />
             <p>@trecomunicacao</p>
-          </div>
+          </a>
         </div>
       </div>
       <form

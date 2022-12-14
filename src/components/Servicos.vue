@@ -62,6 +62,13 @@ export default {
 .tabs_servicos .el-tabs__item.is-active {
   color: #e87aa7;
 }
+.tabs_servicos .el-tabs__item {
+  transition: 0.1s;
+}
+.tabs_servicos .el-tabs__item:hover {
+  transition: 0.1s;
+  color: #e87aa7;
+}
 .tabs_servicos .el-tabs__active-bar {
   background: #e87aa7;
 }

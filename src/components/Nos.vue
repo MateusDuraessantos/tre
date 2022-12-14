@@ -61,6 +61,15 @@ export default {
 </style>
 
 <style>
+.tabs_nos .el-tabs__item {
+  transition: 0.1s;
+}
+
+.tabs_nos .el-tabs__item:hover {
+  transition: 0.1s;
+  color: #ffc800;
+}
+
 .tabs_nos .el-tabs__item.is-active {
   color: #ffc800;
 }
