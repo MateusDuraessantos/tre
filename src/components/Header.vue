@@ -7,8 +7,8 @@
             <div class="descricao_banner">
               <h1>
                 design é <br />
-                <span
-                  >inteligência <br />
+                <span>
+                  inteligência <br />
                   tornada visível</span
                 >
               </h1>
@@ -110,13 +110,13 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100vw;
 }
 .descricao_banner {
   position: absolute;
   display: flex;
   align-items: center;
-  width: var(--body_content_width);
+  width: 100%;
+  max-width: var(--body_content_width);
   height: 100%;
 }
 
@@ -137,5 +137,19 @@ span {
   display: block;
   font-weight: 600;
   color: #333;
+}
+
+@media only screen and (max-width: 900px) {
+  .descricao_banner {
+    justify-content: center;
+  }
+  .descricao_banner h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  span {
+    font-size: 24px;
+  }
 }
 </style>

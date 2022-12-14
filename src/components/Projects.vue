@@ -8,6 +8,7 @@
       </div>
     </div>
     <span @brabis-silizimos="borabill"></span>
+    <!-- <div class="overlay" v-if="up"> -->
     <div class="overlay" v-if="up">
       <div class="pop_content">
         <button class="close" @click="pop()">
@@ -32,14 +33,13 @@
             >
               {{ brabos }}
             </h4>
-
             <el-carousel arrow="always">
               <el-carousel-item
                 v-for="(brabos, index) in projetos[teste].algo[vaiIr]"
                 :key="index"
               >
                 <div class="img_container">
-                  <img class="c" :src="brabos.fotos" :key="index" />
+                  <img :src="brabos.fotos" :key="index" />
                 </div>
               </el-carousel-item>
             </el-carousel>
@@ -780,20 +780,20 @@ h4 {
   top: 0;
   z-index: 2;
   left: 0;
-  width: calc(100vw - 17px);
+  width: 100vw;
   height: 100vh;
   z-index: 20;
 }
+
 .pop_content {
   position: relative;
+  margin: auto;
   background: white;
   width: 100vw;
   width: calc(100% - 100px);
   max-width: var(--body_content_width);
-  max-height: 1000px;
-
+  max-height: 600px;
   padding: 40px;
-  overflow-y: auto;
 }
 .description--popup {
   font-size: 16px;
@@ -801,7 +801,7 @@ h4 {
 .close {
   position: absolute;
   top: 16px;
-  right: 3px;
+  right: 16px;
   background: none;
   border: none;
   width: 30px;
@@ -834,12 +834,6 @@ h4 {
   display: flex;
   justify-content: center;
 }
-.img_size {
-  height: 100%;
-  width: 450px;
-  object-fit: contain;
-}
-
 .outros {
   display: flex;
   justify-content: center;
@@ -880,11 +874,11 @@ h4 {
   .pop_content {
     width: calc(100% - 24px);
     padding: 12px;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
   }
   .description--popup {
     font-size: 14px;
-    max-height: 150px;
-    overflow: scroll;
   }
   .grid_prof {
     grid-template-columns: 1fr 1fr;
@@ -899,6 +893,15 @@ h4 {
   h4 {
     margin-top: 0;
     margin-bottom: 10px;
+  }
+  .pop_content {
+    width: calc(100% - 24px);
+    padding: 12px;
+    overflow-y: auto;
+  }
+
+  .content_projetos {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 </style>

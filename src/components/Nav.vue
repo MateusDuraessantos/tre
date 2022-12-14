@@ -1,7 +1,6 @@
 <template>
-  
-    <nav>
-      <div class="flex">
+  <nav>
+    <div class="flex">
       <figure>
         <img src="../assets/logoComNome.svg" />
       </figure>
@@ -13,8 +12,7 @@
         <li><a href="#footer">contatos</a></li>
       </ul>
     </div>
-    </nav>
-  
+  </nav>
 </template>
 <script>
 export default {
@@ -41,7 +39,7 @@ nav {
 .content_tabs {
   width: 70%;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,5 +70,11 @@ ul a {
 ul a:hover {
   color: black;
   transition: 0.2s;
+}
+
+@media only screen and (max-width: 450px) {
+  ul {
+    display: none;
+  }
 }
 </style>

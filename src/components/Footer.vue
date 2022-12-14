@@ -9,18 +9,7 @@
     </figure>
     <section class="footer_container">
       <div class="section">
-        <!--  <div>
-          <p>Av. dos Carinás, 736 CEP 04089-011 São Paulo - SP</p>
-          <div class="contato">
-            <img src="../assets/icons/local.svg" />
-            <p>Localização no mapa</p>
-          </div>
-        </div> -->
         <div>
-          <!--  <div class="contato">
-            <img src="../assets/icons/fone.svg" />
-            <p>(11) 5054 2425</p>
-          </div> -->
           <div class="contato">
             <img src="../assets/icons/email.svg" />
             <p>contato@tre.art.br</p>
@@ -40,7 +29,7 @@
         <img class="graf" src="../assets/grafismo.svg" alt="" required />
         <input type="text" name="nome" placeholder="Nome" required />
         <input type="text" name="email" placeholder="E-mail" required />
-        <textarea class="mensagem" name="message" placeholder="Mensagem" />
+        <textarea name="message" placeholder="Mensagem" />
         <input class="enviar" type="submit" value="enviar" />
       </form>
     </section>
@@ -72,8 +61,8 @@ footer {
 
 .footer_container {
   width: var(--body_content_width);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   z-index: 2;
 }
@@ -105,11 +94,15 @@ p {
   position: absolute;
   opacity: 0.3;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 1;
   top: 0;
   left: 0;
 }
-
+figure {
+  margin: 0;
+}
 .container_input {
   position: relative;
   display: flex;
@@ -124,29 +117,23 @@ p {
 }
 
 input,
-.mensagem {
+textarea {
   border: none;
   border-bottom: 1px solid #666666;
   height: 36px;
-  width: 320px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
   padding: 12px;
   font-size: 16px;
-}
-
-.mensagem {
-  height: 120px;
-  width: 320px;
-  word-wrap: break-word;
+  font-weight: 300;
 }
 
 textarea {
-  height: 120px !important;
-  width: 320px !important;
-  font-weight: 300;
+  height: 120px;
+  word-wrap: break-word;
 }
 
 input::placeholder {
@@ -170,5 +157,13 @@ input:focus {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 450px) {
 }
 </style>

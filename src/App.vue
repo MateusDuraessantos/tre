@@ -76,11 +76,6 @@ a {
   margin-bottom: 20px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #nos,
 #projetos,
 #servicos {
@@ -124,5 +119,24 @@ h2 {
   background-color: #b2b1b1;
   border-radius: 20px;
   border: 3px solid white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 100px;
+}
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 450px) {
+
+
+}
+
+@media only screen and (max-width: 450px) {
+  main {
+    margin: 0 10px;
+  }
 }
 </style>
