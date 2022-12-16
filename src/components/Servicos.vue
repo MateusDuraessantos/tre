@@ -73,7 +73,5 @@ export default {
   background: #e87aa7;
 }
 
-.demo-tabs .el-tab-pane {
-  height: 100px;
-}
+
 </style>

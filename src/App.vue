@@ -127,11 +127,18 @@ main {
   align-items: center;
   margin: 0 100px;
 }
-/* RESPONSIVIDADE */
+.demo-tabs .el-tab-pane {
+  height: 100px;
+}
 
-@media only screen and (max-width: 450px) {
-
-
+@media only screen and (max-width: 900px) {
+  .demo-tabs .el-tab-pane {
+    height: 200px;
+    overflow: auto;
+  }
+  h2 {
+    margin-top: 26px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
