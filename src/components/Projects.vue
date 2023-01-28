@@ -16,29 +16,20 @@
         <div class="grid_prof">
           <!-- 1° -->
           <div class="grid_prof--first">
-            <div
-              v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject"
-              :key="index"
-            >
+            <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
               <h3>{{ dataInfos.princialTitle }}</h3>
               <div class="description--popup">{{ dataInfos.descricao }}</div>
             </div>
           </div>
           <!-- 2° -->
           <div class="grid_prof--second">
-            <h4
-              v-for="(dataInfos, index) in projetos[indexOfTitles]
-                .titulosCarrossel[indexOfSubtitle]"
-              :key="index"
-            >
+            <h4 v-for="(dataInfos, index) in projetos[indexOfTitles]
+            .titulosCarrossel[indexOfSubtitle]" :key="index">
               {{ dataInfos }}
             </h4>
             <el-carousel arrow="always">
-              <el-carousel-item
-                v-for="(dataInfos, index) in projetos[indexOfTitles]
-                  .outrosProjetos[indexOfSubtitle]"
-                :key="index"
-              >
+              <el-carousel-item v-for="(dataInfos, index) in projetos[indexOfTitles]
+              .outrosProjetos[indexOfSubtitle]" :key="index">
                 <div class="img_container">
                   <img :src="dataInfos.fotos" :key="index" />
                 </div>
@@ -51,16 +42,9 @@
           <span v-if="ocultarOutrosProjetos.outrosProjetos.length > 1">
             <h4>Outros projetos</h4>
             <div class="outros">
-              <div
-                @click="changeNumber(index), borda()"
-                v-for="(dataInfos, index) in projetos[indexOfTitles]
-                  .outrosProjetos"
-                :key="index"
-              >
-                <span
-                  v-for="(thumbOutrosProjetos, index) in dataInfos[0]"
-                  :key="index"
-                >
+              <div @click="changeNumber(index), borda()" v-for="(dataInfos, index) in projetos[indexOfTitles]
+              .outrosProjetos" :key="index">
+                <span v-for="(thumbOutrosProjetos, index) in dataInfos[0]" :key="index">
                   <img class="trocarProjeto" :src="thumbOutrosProjetos" />
                 </span>
               </div>
@@ -126,7 +110,93 @@ export default {
             ],
           ],
         }, */
-        /* Abrinq */
+        /* exemplo */
+        {
+          titleProject: [
+            { princialTitle: "Projeto Exemplo" },
+            {
+              descricao:
+                "Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo .",
+            },
+          ],
+
+          thumb:
+            "projeto_exemplo/1/fazedores1.jpg",
+          titulosCarrossel: [
+            { subTitle: "Exemplo 1" },
+            { subTitle: "Exemplo 2" },
+            { subTitle: "Exemplo 3" },
+            { subTitle: "Exemplo 4" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "projeto_exemplo/1/fazedores1.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/1/fazedores2.jpg",
+              },
+
+              {
+                fotos:
+                  "projeto_exemplo/1/fazedores3.jpg",
+              },
+
+              {
+                fotos:
+                  "projeto_exemplo/1/fazedores4.jpg",
+              },
+
+            ],
+            [
+              {
+                fotos:
+                  "projeto_exemplo/2/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/2/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/2/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
+              },
+            ],
+            [
+              {
+                fotos:
+                  "projeto_exemplo/3/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/3/design-palafita-editorial-folder-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/3/design-palafita-editorial-folder-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/3/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+            ],
+            [
+              {
+                fotos:
+                  "projeto_exemplo/4/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/4/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "projeto_exemplo/4/design-sap-identidade-podcast-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
         {
           titleProject: [
             { princialTitle: "Abrinq" },
@@ -520,6 +590,7 @@ h4 {
   margin-top: 20px;
   margin-bottom: 14px;
 }
+
 .content_projetos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -537,6 +608,7 @@ h4 {
   height: 100%;
   object-fit: cover;
 }
+
 .overlay {
   display: flex;
   align-items: center;
@@ -561,9 +633,11 @@ h4 {
   max-height: 600px;
   padding: 40px;
 }
+
 .description--popup {
   font-size: 16px;
 }
+
 .close {
   position: absolute;
   top: 16px;
@@ -577,10 +651,12 @@ h4 {
   cursor: pointer;
   z-index: 1;
 }
+
 .close:hover {
   opacity: 0.7;
   transition: 0.2s;
 }
+
 .grid_prof {
   display: grid;
   gap: 20px;
@@ -591,6 +667,7 @@ h4 {
 .grid_prof--first {
   grid-area: f1;
 }
+
 .grid_prof--second {
   grid-area: f2;
 }
@@ -601,28 +678,32 @@ h4 {
   display: flex;
   justify-content: center;
 }
+
 .outros {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   gap: 6px;
 }
+
 .trocarProjeto {
   cursor: pointer;
   padding: 0;
   border: none;
   height: 100px;
-  width: 100%;
+  width: 100px;
   object-fit: cover;
   outline: 6px solid rgba(0, 0, 0, 0);
   transition: 0.3s;
 }
+
 .trocarProjeto:hover,
 .trocarProjeto:focus {
   outline: 6px solid #ffc800;
   transition: 0s;
   border-radius: 6px;
 }
+
 .trocarProjeto--img {
   width: 100%;
   object-fit: cover;
@@ -635,32 +716,39 @@ h4 {
   h3 {
     font-size: 18px;
   }
+
   h4 {
     font-size: 18px;
   }
+
   .pop_content {
     width: calc(100% - 24px);
     padding: 12px;
     max-height: calc(100vh - 24px);
     overflow-y: auto;
   }
+
   .description--popup {
     font-size: 14px;
   }
+
   .grid_prof {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "f2 f2" "f1 f1";
   }
 }
+
 @media only screen and (max-width: 450px) {
   .outros {
     margin: 0;
     gap: 0px;
   }
+
   h4 {
     margin-top: 0;
     margin-bottom: 10px;
   }
+
   .pop_content {
     width: calc(100% - 24px);
     padding: 12px;
