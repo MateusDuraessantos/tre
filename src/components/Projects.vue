@@ -110,6 +110,461 @@ export default {
             ],
           ],
         }, */
+
+        /* Palafita */
+        {
+          titleProject: [
+            { princialTitle: "Palafita" },
+            {
+              descricao:
+                "A marca construída para a designer de interiores Nathalie, tem um processo de cocriação muito enriquecedor para as partes envolvidas. Projetamos e posicionamos os serviços gerando novas vertentes e desdobramentos para o negócio e transmitindo os valores do pessoal para o empresarial de maneira limpa e amigável.",
+            },
+          ],
+
+          thumb:
+            "Palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "palafita/design-palafita-editorial-folder-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "palafita/design-palafita-editorial-folder-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "palafita/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "palafita/design-palafita-identidade-papelaria-cartao-visita-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "palafita/design-palafita-identidade-web-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /* Abrinq */
+        {
+          titleProject: [
+            { princialTitle: "Abrinq" },
+            {
+              descricao:
+                "Somos parceiros desta organização há mais de 15 anos e prestamos serviços e suporte em design em muitos segmentos e necessidades, criação de marcas, identidade para campanhas e projetos e todo material editorial.",
+            },
+          ],
+
+          thumb:
+            "abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
+              },
+              {
+                fotos:
+                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-03.jpg",
+              },
+              {
+                fotos:
+                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-04.jpg",
+              },
+            ],
+          ],
+        },
+        /* Black Dog */
+        {
+          titleProject: [
+            { princialTitle: "Black Dog" },
+            {
+              descricao:
+                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca. Esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então, mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
+            },
+          ],
+
+          thumb:
+            "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
+          titulosCarrossel: [{ subTitle: "Black Dog" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
+              },
+              {
+                fotos:
+                  "black_dog/design-black-dog-editorial-cardapio-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "black_dog/design-black-dog-editorial-cardapio-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "black_dog/design-black-dog-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "black_dog/design-black-dog-merchandising-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /* Canon */
+        {
+          titleProject: [
+            { princialTitle: "Canon" },
+            {
+              descricao:
+                "A divisão de impressão profissional da multinacional japonesa tem nosso suporte em gerar material de prospecção e manuais de utilização.",
+            },
+          ],
+
+          thumb: "canon/design-canon-editorial-trecomunicacao.jpg",
+          titulosCarrossel: [{ subTitle: "Canon" }],
+          outrosProjetos: [
+            [
+              {
+                fotos: "canon/design-canon-editorial-trecomunicacao.jpg",
+              },
+            ],
+          ],
+        },
+        /* Cantina Gigio */
+        {
+          titleProject: [
+            { princialTitle: "Cantina Gigio" },
+            {
+              descricao:
+                "Fomos procurados devido à necessidade de uma atualização na sua marca. Ao combinar valores tradicionais e contemporâneos, conseguimos alcançar um resultado limpo. Desenvolvemos desdobramentos da identidade da marca para cardápios e diversos materiais de comunicação visual para seus pontos de contato, serviços que oferecemos com frequência.",
+            },
+          ],
+
+          thumb:
+            "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Cantina Gigio" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cantina_gigio/design-cantina-gigio-merchandising-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-02.jpg",
+              },
+            ],
+          ],
+        },
+        /* CeC */
+        {
+          titleProject: [
+            { princialTitle: "CeC" },
+            {
+              descricao:
+                "O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor.",
+            },
+          ],
+
+          thumb:
+            "cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "CeC" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cec/design-cec-casanova-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cec/design-cec-casanova-identidade-embalagem-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "cec/design-cec-metropac-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "cec/design-cec-smart-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /* EXP */
+        {
+          titleProject: [
+            { princialTitle: "EXP" },
+            {
+              descricao:
+                "É uma empresa de consultoria e gerenciamento de obras de alta qualidade em arquitetura. Sua imagem já possuía índices e valores bem posicionados mas não alinhados com a identidade de marca. Esse foi nosso desafio e projeto realizado.",
+            },
+          ],
+
+          thumb:
+            "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Livro Nuestra Familia" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "exp/design-exp-editorial-agenda-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "exp/design-exp-identidade-apresentacao-comercial-powerpoint-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "exp/design-exp-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "exp/design-exp-sinalizacao-trecomunicacao-01.jpg",
+              },
+
+
+            ],
+          ],
+        },
+        /* Livro Nuestra Familia */
+        {
+          titleProject: [
+            { princialTitle: "Livro Nuestra Familia" },
+            {
+              descricao:
+                "A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material.",
+            },
+          ],
+
+          thumb:
+            "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Livro Nuestra Familia" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
+              },
+            ],
+          ],
+        },
+        /* OTOH */
+        {
+          titleProject: [
+            { princialTitle: "Paineiras" },
+            {
+              descricao:
+                "O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano.",
+            },
+          ],
+
+          thumb:
+            "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Paineiras" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "otoh/design-otoh-editorial-agenda-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "otoh/design-otoh-editorial-cartaz-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "otoh/design-otoh-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "otoh/design-otoh-identidade-web-site-trecomunicacao-01.jpg",
+              },
+
+            ],
+          ],
+        },
+        /* Paineiras */
+        {
+          titleProject: [
+            { princialTitle: "Paineiras" },
+            {
+              descricao:
+                "O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano.",
+            },
+          ],
+
+          thumb:
+            "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Paineiras" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "paineiras/design-paineiras-editorial-livro-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "paineiras/design-paineiras-editorial-livro-trecomunicacao-03.jpg",
+              },
+              {
+                fotos:
+                  "paineiras/design-paineiras-editorial-revista-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "paineiras/design-paineiras-editorial-revista-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "paineiras/design-paineiras-sinalizacao-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /* Renner Alchemia */
+        {
+          titleProject: [
+            { princialTitle: "Renner Alchemia" },
+            {
+              descricao:
+                "O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil.",
+            },
+          ],
+
+          thumb:
+            "renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Renner Alchemia" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "renner/design-renner-alchemia-embalagem-trecomunicacao-02.jpg",
+              },
+            ],
+          ],
+        },
+        /* SAP */
+        {
+          titleProject: [
+            { princialTitle: "SAP" },
+            {
+              descricao:
+                "Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play.",
+            },
+          ],
+
+          thumb: "sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "sap/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "sap/design-sap-identidade-podcast-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /*  */
+        {
+          titleProject: [
+            { princialTitle: "Temra" },
+            {
+              descricao:
+                'O cuidado com a linguagem das imagens que produzimos para TEMRA fala muito de sua essência, simplicidade e tecnologia – fórmula campeã para criar animais com saúde.A linha de embalagem ganhou um toque de simplicidade e autenticidade: "somos o que somos, somos TEMRA" essa é a mensagem a ser passada pela identidade de marca, acompanhada de sua tagline "a nobreza do rústico".',
+            },
+          ],
+
+          thumb:
+            "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "Temra" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "temra/design-temra-identidade-embalagem-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "temra/design-temra-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "temra/design-temra-identidade-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
         /* exemplo */
         {
           titleProject: [
@@ -197,358 +652,7 @@ export default {
             ],
           ],
         },
-        {
-          titleProject: [
-            { princialTitle: "Abrinq" },
-            {
-              descricao:
-                "A marca Beleza da Vila é concebida pelo traçado de tipografias atemporais que remetem aos magazines e sua atmosfera de moda e mundo fashion em sua melhor performance, uma elegância natural sem fetiches ou tendencias, sem moldes ou preconceitos. Nossa coloração é a dupla perfeita, o casamento entre um rosa inocente e o preto misterioso do olhar que só o feminino é capaz de produzir.",
-            },
-          ],
 
-          thumb:
-            "abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
-              },
-              {
-                fotos:
-                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-03.jpg",
-              },
-              {
-                fotos:
-                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-04.jpg",
-              },
-            ],
-          ],
-        },
-        /* Black Dog */
-        {
-          titleProject: [
-            { princialTitle: "Black Dog" },
-            {
-              descricao:
-                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca, esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
-            },
-          ],
-
-          thumb:
-            "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
-          titulosCarrossel: [{ subTitle: "Black Dog" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
-              },
-              {
-                fotos:
-                  "black_dog/design-black-dog-editorial-cardapio-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "black_dog/design-black-dog-editorial-cardapio-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "black_dog/design-black-dog-editorial-manual-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "black_dog/design-black-dog-merchandising-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /* Canon */
-        {
-          titleProject: [
-            { princialTitle: "Canon" },
-            {
-              descricao:
-                "Desde 2008, criamos e desenvolvemos uma variedade de materiais impressos para a Canon nos segmentos de câmeras e impressoras, entre os quais convites, catálogos de produto e catálogos gerais, folders para eventos, anúncios de revista e cadernos, além de adaptar alguns deles para boletins eletrônicos.",
-            },
-          ],
-
-          thumb: "canon/design-canon-editorial-trecomunicacao.jpg",
-          titulosCarrossel: [{ subTitle: "Canon" }],
-          outrosProjetos: [
-            [
-              {
-                fotos: "canon/design-canon-editorial-trecomunicacao.jpg",
-              },
-            ],
-          ],
-        },
-        /* Cantina Gigio */
-        {
-          titleProject: [
-            { princialTitle: "Cantina Gigio" },
-            {
-              descricao:
-                "A conhecida cantina italiana situada nos bairros de Pinheiros e Brás - São Paulo, nos procurou para uma atualização de sua marca. Isso envolveu a criação e desenvolvimento de todo o seu ambiente gráfico, bem como seus pontos de contato, como Papelaria básica, cardápios, etc.",
-            },
-          ],
-
-          thumb:
-            "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Cantina Gigio" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "cantina_gigio/design-cantina-gigio-merchandising-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-02.jpg",
-              },
-            ],
-          ],
-        },
-        /* CeC */
-        {
-          titleProject: [
-            { princialTitle: "CeC" },
-            {
-              descricao:
-                "O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor.",
-            },
-          ],
-
-          thumb:
-            "cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.png",
-          titulosCarrossel: [{ subTitle: "CeC" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.png",
-              },
-              {
-                fotos:
-                  "cec/design-cec-casanova-identidade-embalagem-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "cec/design-cec-casanova-identidade-embalagem-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "cec/design-cec-metropac-identidade-embalagem-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "cec/design-cec-smart-identidade-embalagem-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /* Livro Nuestra Familia */
-        {
-          titleProject: [
-            { princialTitle: "Livro Nuestra Familia" },
-            {
-              descricao:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius, non harum repudiandae nulla facere aperiam magnam velit? Inventore iure veritatis rem nostrum quasi accusamus ad alias sunt voluptatum expedita.",
-            },
-          ],
-
-          thumb:
-            "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Livro Nuestra Familia" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
-              },
-            ],
-          ],
-        },
-        /* Paineiras */
-        {
-          titleProject: [
-            { princialTitle: "Paineiras" },
-            {
-              descricao:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius, non harum repudiandae nulla facere aperiam magnam velit? Inventore iure veritatis rem nostrum quasi accusamus ad alias sunt voluptatum expedita.",
-            },
-          ],
-
-          thumb:
-            "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Paineiras" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "paineiras/design-paineiras-editorial-livro-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "paineiras/design-paineiras-editorial-livro-trecomunicacao-03.jpg",
-              },
-              {
-                fotos:
-                  "paineiras/design-paineiras-editorial-revista-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "paineiras/design-paineiras-editorial-revista-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "paineiras/design-paineiras-sinalizacao-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /* Renner Alchemia */
-        {
-          titleProject: [
-            { princialTitle: "Renner Alchemia" },
-            {
-              descricao:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius, non harum repudiandae nulla facere aperiam magnam velit? Inventore iure veritatis rem nostrum quasi accusamus ad alias sunt voluptatum expedita.",
-            },
-          ],
-
-          thumb:
-            "renner_alchemia/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Renner Alchemia" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "renner_alchemia/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "renner_alchemia/design-renner-alchemia-embalagem-trecomunicacao-02.jpg",
-              },
-            ],
-          ],
-        },
-        /* SAP */
-        {
-          titleProject: [
-            { princialTitle: "SAP" },
-            {
-              descricao:
-                "A SAP – empresa alemã, líder em gestão de negócios no mundo – demandou uma análise de diretrizes visuais estabelecidas pela matriz e adequação de algumas peças à tais normas. Os projetos consistiram em: Estruturação visual entre a marca principal e suas submersas / produtos, à fim de estabelecer uma hierarquia visual para o seu uso; Backdrop criado para servir de fundo para video-aulas e apresentações; Proposta de adequação visual de uma plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play.",
-            },
-          ],
-
-          thumb: "sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "SAP" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "sap/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "sap/design-sap-identidade-podcast-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /*  */
-        {
-          titleProject: [
-            { princialTitle: "Temra" },
-            {
-              descricao:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius, non harum repudiandae nulla facere aperiam magnam velit? Inventore iure veritatis rem nostrum quasi accusamus ad alias sunt voluptatum expedita.",
-            },
-          ],
-
-          thumb:
-            "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.png",
-          titulosCarrossel: [{ subTitle: "Temra" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.png",
-              },
-              {
-                fotos:
-                  "temra/design-temra-identidade-embalagem-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "temra/design-temra-identidade-papelaria-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "temra/design-temra-identidade-site-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /*  */
-        /* {
-          titleProject: [
-            { princialTitle: "" },
-            {
-              descricao: "",
-            },
-          ],
-
-          thumb: "/",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos: "/",
-              },
-              {
-                fotos: "/",
-              },
-              {
-                fotos: "/",
-              },
-              {
-                fotos: "/",
-              },
-            ],
-          ],
-        }, */
       ],
     };
   },
@@ -564,10 +668,8 @@ export default {
       console.log(this.upPopup);
       if (this.upPopup == true) {
         document.body.classList.add("overflowOn");
-        // console.log("overflowOn");
       } else {
         document.body.classList.remove("overflowOn");
-        // console.log("overflowOff");
       }
     },
   },
