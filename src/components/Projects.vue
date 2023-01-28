@@ -120,7 +120,7 @@ export default {
           ],
 
           thumb:
-            "Palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+            "palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
@@ -793,7 +793,8 @@ h4 {
   padding: 0;
   border: none;
   height: 100px;
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   object-fit: cover;
   outline: 6px solid rgba(0, 0, 0, 0);
   transition: 0.3s;
