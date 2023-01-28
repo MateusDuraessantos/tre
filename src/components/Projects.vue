@@ -11,7 +11,7 @@
     <div class="overlay" v-if="upPopup">
       <div class="pop_content">
         <button class="close" @click="pop()">
-          <img src="../assets/icons/close.svg" alt="" />
+          <img src="../assets/icons/close.svg" alt="close" />
         </button>
         <div class="grid_prof">
           <!-- 1° -->
@@ -38,18 +38,16 @@
           </div>
         </div>
 
-        <span v-for="(ocultarOutrosProjetos, index) in projetos" :key="index">
-          <span v-if="ocultarOutrosProjetos.outrosProjetos.length > 1">
-            <h4>Outros projetos</h4>
-            <div class="outros">
-              <div @click="changeNumber(index), borda()" v-for="(dataInfos, index) in projetos[indexOfTitles]
-              .outrosProjetos" :key="index">
-                <span v-for="(thumbOutrosProjetos, index) in dataInfos[0]" :key="index">
-                  <img class="trocarProjeto" :src="thumbOutrosProjetos" />
-                </span>
-              </div>
+        <span v-if="projetos[indexOfTitles].outrosProjetos.length > 1">
+          <h4>Outros projetos</h4>
+          <div class="outros">
+            <div @click="changeNumber(index), borda()"
+              v-for="(dataInfos, index) in projetos[indexOfTitles].outrosProjetos" :key="index">
+              <span v-for="(thumbOutrosProjetos, index) in dataInfos[0]" :key="index">
+                <img class="trocarProjeto" :src="thumbOutrosProjetos" />
+              </span>
             </div>
-          </span>
+          </div>
         </span>
       </div>
     </div>
@@ -658,19 +656,21 @@ export default {
   },
 
   methods: {
-    changeNumber(n) {
-      this.indexOfSubtitle = n;
+    changeNumber(x) {
+      this.indexOfSubtitle = x;
       console.log(this.indexOfSubtitle);
     },
     pop(n) {
+
       this.upPopup = !this.upPopup;
-      this.indexOfTitles = n;
       console.log(this.upPopup);
+      this.indexOfTitles = n;
       if (this.upPopup == true) {
         document.body.classList.add("overflowOn");
       } else {
         document.body.classList.remove("overflowOn");
       }
+      this.indexOfSubtitle = 0
     },
   },
 };
