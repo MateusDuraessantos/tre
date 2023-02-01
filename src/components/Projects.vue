@@ -1,6 +1,6 @@
 <template>
   <section id="projetos">
-    <h2>projetos</h2>
+    <h2 class="h2--modifier">projetos</h2>
 
     <div class="content_projetos">
       <div v-for="(projetosAll, index) in projetos" :key="index">
@@ -8,7 +8,7 @@
       </div>
     </div>
     <!-- <div class="overlay" v-if="upPopup"> -->
-    <div class="overlay" v-if="upPopup">
+    <div class="overlay" @click="overlay" v-if="upPopup">
       <div class="pop_content">
         <button class="close" @click="pop()">
           <img src="../assets/icons/close.svg" alt="close" />
@@ -54,12 +54,14 @@
   </section>
 </template>
 <script>
+
 export default {
   data() {
     return {
       upPopup: false,
       indexOfTitles: 0,
       indexOfSubtitle: 0,
+
       projetos: [
         /* 
         Extrutura padrão dos projetos, NÃO DELETAR!
@@ -197,7 +199,7 @@ export default {
 
           thumb:
             "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
-          titulosCarrossel: [{ subTitle: "Black Dog" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -234,7 +236,7 @@ export default {
           ],
 
           thumb: "canon/design-canon-editorial-trecomunicacao.jpg",
-          titulosCarrossel: [{ subTitle: "Canon" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -255,7 +257,7 @@ export default {
 
           thumb:
             "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Cantina Gigio" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -289,7 +291,7 @@ export default {
 
           thumb:
             "cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "CeC" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -331,7 +333,7 @@ export default {
 
           thumb:
             "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Livro Nuestra Familia" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -375,7 +377,7 @@ export default {
 
           thumb:
             "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Livro Nuestra Familia" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -396,16 +398,16 @@ export default {
         /* OTOH */
         {
           titleProject: [
-            { princialTitle: "Paineiras" },
+            { princialTitle: "Otoh" },
             {
               descricao:
-                "O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano.",
+                "Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras ”O”.",
             },
           ],
 
           thumb:
             "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Paineiras" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -444,7 +446,7 @@ export default {
 
           thumb:
             "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Paineiras" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -486,7 +488,7 @@ export default {
 
           thumb:
             "renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Renner Alchemia" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -541,7 +543,7 @@ export default {
 
           thumb:
             "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "Temra" }],
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
@@ -661,7 +663,6 @@ export default {
       console.log(this.indexOfSubtitle);
     },
     pop(n) {
-
       this.upPopup = !this.upPopup;
       console.log(this.upPopup);
       this.indexOfTitles = n;
@@ -672,14 +673,26 @@ export default {
       }
       this.indexOfSubtitle = 0
     },
+    overlay(s) {
+      var a = s.target.classList[0]
+      console.log(a)
+      if (a == 'overlay') {
+        this.upPopup = !this.upPopup;
+        document.body.classList.remove("overflowOn");
+      }
+    }
   },
 };
+
+
+
 </script>
 
 <style scoped>
 h2 {
   color: #28b2ed;
 }
+
 
 h3 {
   font-size: 30px;
@@ -712,6 +725,7 @@ h4 {
 }
 
 .overlay {
+  transition: 2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -727,6 +741,7 @@ h4 {
 
 .pop_content {
   position: relative;
+  border-radius: 6px;
   margin: auto;
   background: white;
   width: 100vw;
@@ -734,6 +749,7 @@ h4 {
   max-width: var(--body_content_width);
   max-height: 600px;
   padding: 40px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 .description--popup {

@@ -38,6 +38,7 @@ export default {
 .el-carousel__button {
   opacity: 0.2;
 }
+
 .el-carousel__button {
   background-color: black;
 }
@@ -45,17 +46,21 @@ export default {
 .overflowOn {
   overflow-y: hidden;
   margin-right: 11px;
+
 }
+
 #navHeader {
   padding-right: 11px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* font-family: 'Roboto', sans-serif; */
 * {
   font-family: "Roboto", sans-serif !important;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -68,16 +73,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --body_content_width: 900px;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
 
 [gap_bottom] {
-  margin-bottom: 20px;
+  margin-bottom: 75px;
 }
 
 #nos,
@@ -86,9 +93,11 @@ a {
   width: 100%;
   max-width: var(--body_content_width);
 }
+
 .el-tab-pane {
   color: #4d4d4d;
 }
+
 h1,
 h2,
 h3,
@@ -96,6 +105,7 @@ h4,
 h5 {
   margin: 0;
 }
+
 h1 {
   font-size: 24px;
   color: #4d4d4d;
@@ -103,10 +113,11 @@ h1 {
   width: 100%;
   max-width: var(--body_content_width);
 }
+
 h2 {
   font-size: 40px;
   font-weight: 900;
-  margin-top: 65px;
+
 }
 
 /* Scroll Style */
@@ -131,18 +142,17 @@ main {
   align-items: center;
   margin: 0 100px;
 }
+
 .demo-tabs .el-tab-pane {
   height: 100px;
 }
 
 @media only screen and (max-width: 900px) {
-  .demo-tabs .el-tab-pane {
+  /*   .demo-tabs .el-tab-pane {
     height: 200px;
     overflow: auto;
-  }
-  h2 {
-    margin-top: 26px;
-  }
+  } */
+
 }
 
 @media only screen and (max-width: 450px) {
