@@ -1,5 +1,5 @@
 <template>
-  <Nav />
+  <Nav/>
   <Header/>
   <main>
     <Nos/>
@@ -8,7 +8,7 @@
     <!-- router -->
     <router-view></router-view>
   </main>
-  <Footer />
+  <Footer/>
 </template>
 
 <script>

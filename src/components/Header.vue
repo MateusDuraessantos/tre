@@ -45,7 +45,7 @@
           <div class="container_descricao">
             <div class="descricao_banner">
               <h1>
-                tudo está em constante evolução
+                tudo está em constante evolução.
                 <br /><span>construir novas realidades</span> é tarefa do design
               </h1>
             </div>
@@ -62,12 +62,12 @@
           <div class="container_descricao">
             <div class="descricao_banner">
               <h1>
-                a mais de 30 anos<br />
-                <span
-                  >construíndo e auxiliando grandes marcas a se <br />
-                  posicionar e encontrar <br />
-                  seu propósito</span
-                >
+                há mais de 30 anos,<br />
+                <span>
+                  construindo e auxiliando grandes<br>
+                  marcas a se posicionarem e a encontrarem<br>
+                  seus propósitos
+                </span>
               </h1>
             </div>
             <figure>

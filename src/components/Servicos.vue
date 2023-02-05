@@ -24,14 +24,14 @@
       </el-tab-pane>
       <el-tab-pane label="card design" name="tercerio">
         A cara da sua empresa em um cartão e mais, com todos os possíveis itens
-        de segurança pensados estrategicamente no projeto de design, alinhado
-        com o DNA da sua marca, sim fazemos isso a mais de 15 anos.
+        de segurança pensados estrategicamente no projeto de design, alinhados
+        com o DNA da sua marca: sim, fazemos isso há mais de 15 anos.
       </el-tab-pane>
       <el-tab-pane label="comunicação da marca" name="quarto">
-        O suporte de comunicação online e off-line que sua marca necessita para
-        atingir seus públicos, discutir comunicação a partir da marca e seu DNA
-        é muito diferente de fazer comunicação de algo a ser dito, marca é
-        essência e a promessa precisa estar alinhado desde sempre.
+        O suporte de comunicação online e offline que sua marca necessita para
+        atingir seus públicos, discutir a comunicação a partir da marca e seu
+        DNA é muito diferente de fazer comunicação de algo a ser dito. Marca é
+        essência, e a promessa precisa estar alinhada desde sempre.
       </el-tab-pane>
       <el-tab-pane label="eventos" name="quinto">
         Atividade estratégica de construção de conteúdo e engajamento para
@@ -72,6 +72,4 @@ export default {
 .tabs_servicos .el-tabs__active-bar {
   background: #e87aa7;
 }
-
-
 </style>

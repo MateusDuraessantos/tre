@@ -9,10 +9,10 @@
       <el-tab-pane label="histórico" name="first">
         A Tre Comunicação atua no mercado de design desde 1990, quando fundada
         pelo designer Kito Castanha. Geradora de competências ao relacionar
-        criatividade, arte e suporte empresarial, construimos junto aos clientes
-        posicionamento claro e comunicação eficiente para seus mercados. Nosso
-        propósito é permear a competência do design dentro das corporações,
-        disseminando o valor do design para a sociedade.
+        criatividade, arte e suporte empresarial, construímos junto aos clientes
+        um posicionamento claro e uma comunicação eficiente para seus mercados.
+        Nosso propósito é permear a competência do design dentro das corporações
+        e disseminar o valor do design para a sociedade.
       </el-tab-pane>
       <el-tab-pane label="valores" name="second">
         Toda a condução de trabalho vem de nossos valores. Como eixo,
