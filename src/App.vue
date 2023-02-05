@@ -1,10 +1,10 @@
 <template>
   <Nav />
-  <Header gap_bottom />
+  <Header/>
   <main>
-    <Nos gap_bottom />
-    <Servicos gap_bottom />
-    <Projects gap_bottom />
+    <Nos/>
+    <Servicos/>
+    <Projects/>
     <!-- router -->
     <router-view></router-view>
   </main>
@@ -83,9 +83,9 @@ a {
   color: black;
 }
 
-[gap_bottom] {
+/* [gap_bottom] {
   margin-bottom: 75px;
-}
+} */
 
 #nos,
 #projetos,
@@ -117,6 +117,7 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 900;
+  margin-top:70px  ;
 
 }
 

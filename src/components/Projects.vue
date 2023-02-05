@@ -1,6 +1,6 @@
 <template>
   <section id="projetos">
-    <h2 class="h2--modifier">projetos</h2>
+    <h2>projetos</h2>
 
     <div class="content_projetos">
       <div v-for="(projetosAll, index) in projetos" :key="index">
