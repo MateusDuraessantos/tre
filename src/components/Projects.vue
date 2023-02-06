@@ -21,7 +21,9 @@
               :key="index"
             >
               <h3>{{ dataInfos.princialTitle }}</h3>
-              <div class="description--popup">{{ dataInfos.descricao }}</div>
+              <div class="description--popup" v-for="(descricoesProjetc, index) in dataInfos.descricao" :key="index">
+                {{ descricoesProjetc[indexOfSubtitle] }} <br>
+              </div>
             </div>
           </div>
           <!-- 2° -->
@@ -57,7 +59,7 @@
               :key="index"
             >
               <span
-                v-for="(thumbOutrosProjetos, index) in dataInfos[0]"
+                v-for="(thumbOutrosProjetos, idex) in dataInfos[0]"
                 :key="index"
               >
                 <img class="trocarProjeto" :src="thumbOutrosProjetos" />
@@ -132,7 +134,7 @@ export default {
             { princialTitle: "Palafita" },
             {
               descricao:
-                "A marca construída para a designer de interiores Nathalie, tem um processo de cocriação muito enriquecedor para as partes envolvidas. Projetamos e posicionamos os serviços gerando novas vertentes e desdobramentos para o negócio e transmitindo os valores do pessoal para o empresarial de maneira limpa e amigável.",
+                [["A marca construída para a designer de interiores Nathalie, tem um processo de cocriação muito enriquecedor para as partes envolvidas. Projetamos e posicionamos os serviços gerando novas vertentes e desdobramentos para o negócio e transmitindo os valores do pessoal para o empresarial de maneira limpa e amigável."]],
             },
           ],
 
@@ -174,7 +176,7 @@ export default {
             { princialTitle: "Abrinq" },
             {
               descricao:
-                "Somos parceiros desta organização há mais de 15 anos e prestamos serviços e suporte em design em muitos segmentos e necessidades, criação de marcas, identidade para campanhas e projetos e todo material editorial.",
+               [[ "Somos parceiros desta organização há mais de 15 anos e prestamos serviços e suporte em design em muitos segmentos e necessidades, criação de marcas, identidade para campanhas e projetos e todo material editorial."]],
             },
           ],
 
@@ -208,7 +210,7 @@ export default {
             { princialTitle: "Black Dog" },
             {
               descricao:
-                "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca. Esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então, mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada.",
+               [[ "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca. Esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então, mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada."]],
             },
           ],
 
@@ -246,7 +248,7 @@ export default {
             { princialTitle: "Canon" },
             {
               descricao:
-                "A divisão de impressão profissional da multinacional japonesa tem nosso suporte em gerar material de prospecção e manuais de utilização.",
+                [["A divisão de impressão profissional da multinacional japonesa tem nosso suporte em gerar material de prospecção e manuais de utilização."]],
             },
           ],
 
@@ -266,7 +268,7 @@ export default {
             { princialTitle: "Cantina Gigio" },
             {
               descricao:
-                "Fomos procurados devido à necessidade de uma atualização na sua marca. Ao combinar valores tradicionais e contemporâneos, conseguimos alcançar um resultado limpo. Desenvolvemos desdobramentos da identidade da marca para cardápios e diversos materiais de comunicação visual para seus pontos de contato, serviços que oferecemos com frequência.",
+               [[ "Fomos procurados devido à necessidade de uma atualização na sua marca. Ao combinar valores tradicionais e contemporâneos, conseguimos alcançar um resultado limpo. Desenvolvemos desdobramentos da identidade da marca para cardápios e diversos materiais de comunicação visual para seus pontos de contato, serviços que oferecemos com frequência."]],
             },
           ],
 
@@ -300,7 +302,7 @@ export default {
             { princialTitle: "CeC" },
             {
               descricao:
-                "O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor.",
+               [[ "O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor."]],
             },
           ],
 
@@ -342,7 +344,7 @@ export default {
             { princialTitle: "EXP" },
             {
               descricao:
-                "É uma empresa de consultoria e gerenciamento de obras de alta qualidade em arquitetura. Sua imagem já possuía índices e valores bem posicionados mas não alinhados com a identidade de marca. Esse foi nosso desafio e projeto realizado.",
+                [["É uma empresa de consultoria e gerenciamento de obras de alta qualidade em arquitetura. Sua imagem já possuía índices e valores bem posicionados mas não alinhados com a identidade de marca. Esse foi nosso desafio e projeto realizado."]],
             },
           ],
 
@@ -382,7 +384,7 @@ export default {
             { princialTitle: "Livro Nuestra Familia" },
             {
               descricao:
-                "A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material.",
+               [[ "A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material."]],
             },
           ],
 
@@ -412,7 +414,7 @@ export default {
             { princialTitle: "Otoh" },
             {
               descricao:
-                "Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras ”O”.",
+              [[  "Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras ”O”."]],
             },
           ],
 
@@ -448,7 +450,7 @@ export default {
             { princialTitle: "Paineiras" },
             {
               descricao:
-                "O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano.",
+               [[ "O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano."]],
             },
           ],
 
@@ -490,7 +492,7 @@ export default {
             { princialTitle: "Renner Alchemia" },
             {
               descricao:
-                "O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil.",
+               [[ "O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil."]],
             },
           ],
 
@@ -516,7 +518,7 @@ export default {
             { princialTitle: "SAP" },
             {
               descricao:
-                "Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play.",
+               [[ "Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play."]],
             },
           ],
 
@@ -546,7 +548,7 @@ export default {
             { princialTitle: "Temra" },
             {
               descricao:
-                'O cuidado com a linguagem das imagens que produzimos para TEMRA fala muito de sua essência, simplicidade e tecnologia – fórmula campeã para criar animais com saúde.A linha de embalagem ganhou um toque de simplicidade e autenticidade: "somos o que somos, somos TEMRA" essa é a mensagem a ser passada pela identidade de marca, acompanhada de sua tagline "a nobreza do rústico".',
+                [['O cuidado com a linguagem das imagens que produzimos para TEMRA fala muito de sua essência, simplicidade e tecnologia – fórmula campeã para criar animais com saúde.A linha de embalagem ganhou um toque de simplicidade e autenticidade: "somos o que somos, somos TEMRA" essa é a mensagem a ser passada pela identidade de marca, acompanhada de sua tagline "a nobreza do rústico".']],
             },
           ],
 
@@ -581,7 +583,7 @@ export default {
             { princialTitle: "4 Artes" },
             {
               descricao:
-                "Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções.",
+             [[   "Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
             },
           ],
 
@@ -611,8 +613,13 @@ export default {
           titleProject: [
             { princialTitle: "Projeto Exemplo" },
             {
-              descricao:
-                "Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo Projeto exemplo .",
+              descricao: [[
+                "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+                "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+                "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
+                "4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4",
+              ]
+              ]
             },
           ],
 
