@@ -16,20 +16,29 @@
         <div class="grid_prof">
           <!-- 1° -->
           <div class="grid_prof--first">
-            <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
+            <div
+              v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject"
+              :key="index"
+            >
               <h3>{{ dataInfos.princialTitle }}</h3>
               <div class="description--popup">{{ dataInfos.descricao }}</div>
             </div>
           </div>
           <!-- 2° -->
           <div class="grid_prof--second">
-            <h4 v-for="(dataInfos, index) in projetos[indexOfTitles]
-            .titulosCarrossel[indexOfSubtitle]" :key="index">
+            <h4
+              v-for="(dataInfos, index) in projetos[indexOfTitles]
+                .titulosCarrossel[indexOfSubtitle]"
+              :key="index"
+            >
               {{ dataInfos }}
             </h4>
             <el-carousel arrow="always">
-              <el-carousel-item v-for="(dataInfos, index) in projetos[indexOfTitles]
-              .outrosProjetos[indexOfSubtitle]" :key="index">
+              <el-carousel-item
+                v-for="(dataInfos, index) in projetos[indexOfTitles]
+                  .outrosProjetos[indexOfSubtitle]"
+                :key="index"
+              >
                 <div class="img_container">
                   <img :src="dataInfos.fotos" :key="index" />
                 </div>
@@ -41,9 +50,16 @@
         <span v-if="projetos[indexOfTitles].outrosProjetos.length > 1">
           <h4>Outros projetos</h4>
           <div class="outros">
-            <div @click="changeNumber(index), borda()"
-              v-for="(dataInfos, index) in projetos[indexOfTitles].outrosProjetos" :key="index">
-              <span v-for="(thumbOutrosProjetos, index) in dataInfos[0]" :key="index">
+            <div
+              @click="changeNumber(index), borda()"
+              v-for="(dataInfos, index) in projetos[indexOfTitles]
+                .outrosProjetos"
+              :key="index"
+            >
+              <span
+                v-for="(thumbOutrosProjetos, index) in dataInfos[0]"
+                :key="index"
+              >
                 <img class="trocarProjeto" :src="thumbOutrosProjetos" />
               </span>
             </div>
@@ -54,7 +70,6 @@
   </section>
 </template>
 <script>
-
 export default {
   data() {
     return {
@@ -345,8 +360,7 @@ export default {
                   "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-02.jpg",
               },
               {
-                fotos:
-                  "exp/design-exp-editorial-agenda-trecomunicacao-01.jpg",
+                fotos: "exp/design-exp-editorial-agenda-trecomunicacao-01.jpg",
               },
               {
                 fotos:
@@ -357,11 +371,8 @@ export default {
                   "exp/design-exp-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
-                fotos:
-                  "exp/design-exp-sinalizacao-trecomunicacao-01.jpg",
+                fotos: "exp/design-exp-sinalizacao-trecomunicacao-01.jpg",
               },
-
-
             ],
           ],
         },
@@ -405,14 +416,12 @@ export default {
             },
           ],
 
-          thumb:
-            "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+          thumb: "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
-                fotos:
-                  "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+                fotos: "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
@@ -430,7 +439,6 @@ export default {
                 fotos:
                   "otoh/design-otoh-identidade-web-site-trecomunicacao-01.jpg",
               },
-
             ],
           ],
         },
@@ -531,7 +539,8 @@ export default {
             ],
           ],
         },
-        /*  */
+
+        /* Temra */
         {
           titleProject: [
             { princialTitle: "Temra" },
@@ -565,6 +574,38 @@ export default {
             ],
           ],
         },
+
+        // Novo Projeto 
+        {
+          titleProject: [
+            { princialTitle: "4 Artes" },
+            {
+              descricao:
+                "Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções.",
+            },
+          ],
+
+          thumb:
+            "4 Artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "4 Artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "4 Artes/design-4-artes-identidade-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "4 Artes/design-4-artes-identidade-trecomunicacao-03.jpg",
+              },
+            ],
+          ],
+        },
+
         /* exemplo */
         {
           titleProject: [
@@ -575,34 +616,29 @@ export default {
             },
           ],
 
-          thumb:
-            "projeto_exemplo/1/fazedores1.jpg",
+          thumb: "projeto_exemplo/1/fazedores1.jpg",
           titulosCarrossel: [
             { subTitle: "Exemplo 1" },
             { subTitle: "Exemplo 2" },
             { subTitle: "Exemplo 3" },
-            { subTitle: "Exemplo 4" }],
+            { subTitle: "Exemplo 4" },
+          ],
           outrosProjetos: [
             [
               {
-                fotos:
-                  "projeto_exemplo/1/fazedores1.jpg",
+                fotos: "projeto_exemplo/1/fazedores1.jpg",
               },
               {
-                fotos:
-                  "projeto_exemplo/1/fazedores2.jpg",
+                fotos: "projeto_exemplo/1/fazedores2.jpg",
               },
 
               {
-                fotos:
-                  "projeto_exemplo/1/fazedores3.jpg",
+                fotos: "projeto_exemplo/1/fazedores3.jpg",
               },
 
               {
-                fotos:
-                  "projeto_exemplo/1/fazedores4.jpg",
+                fotos: "projeto_exemplo/1/fazedores4.jpg",
               },
-
             ],
             [
               {
@@ -652,7 +688,6 @@ export default {
             ],
           ],
         },
-
       ],
     };
   },
@@ -671,28 +706,24 @@ export default {
       } else {
         document.body.classList.remove("overflowOn");
       }
-      this.indexOfSubtitle = 0
+      this.indexOfSubtitle = 0;
     },
     overlay(s) {
-      var a = s.target.classList[0]
-      console.log(a)
-      if (a == 'overlay') {
+      var a = s.target.classList[0];
+      console.log(a);
+      if (a == "overlay") {
         this.upPopup = !this.upPopup;
         document.body.classList.remove("overflowOn");
       }
-    }
+    },
   },
 };
-
-
-
 </script>
 
 <style scoped>
 h2 {
   color: #28b2ed;
 }
-
 
 h3 {
   font-size: 30px;
