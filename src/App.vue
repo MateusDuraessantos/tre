@@ -148,9 +148,18 @@ main {
   overflow: auto;
 }
 
+
+.mg-right-nav {
+  right: 6px;
+}
+
 @media only screen and (max-width: 900px) {
   .demo-tabs .el-tab-pane {
     height: 200px;
+  }
+
+  .mg-right-nav {
+    right: 0;
   }
 
   .overflowOn {
