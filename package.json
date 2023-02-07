@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
     "element-plus": "^2.2.25",
+    "firebase": "^9.17.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

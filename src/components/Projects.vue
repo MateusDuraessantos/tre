@@ -572,21 +572,21 @@ export default {
           ],
 
           thumb:
-            "4 Artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
+            "artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "4 Artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
+                  "artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "4 Artes/design-4-artes-identidade-trecomunicacao-02.jpg",
+                  "artes/design-4-artes-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "4 Artes/design-4-artes-identidade-trecomunicacao-03.jpg",
+                  "artes/design-4-artes-identidade-trecomunicacao-03.jpg",
               },
             ],
           ],
@@ -603,37 +603,37 @@ export default {
           ],
 
           thumb:
-            "BlueBe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+            "bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "BlueBe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+                  "bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "BlueBe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
+                  "bluebe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "BlueBe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
+                  "bluebe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
+                  "bluebe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
+                  "bluebe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "BlueBe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
+                  "bluebe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "BlueBe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
+                  "bluebe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -650,29 +650,29 @@ export default {
           ],
 
           thumb:
-            "TaoTao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+            "taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "TaoTao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+                  "taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "TaoTao/design-taotao-editorial-trecomunicacao-01.jpg",
+                  "taotao/design-taotao-editorial-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "TaoTao/design-taotao-editorial-trecomunicacao-02.jpg",
+                  "taotao/design-taotao-editorial-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "TaoTao/design-taotao-editorial-trecomunicacao-03.jpg",
+                  "taotao/design-taotao-editorial-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "TaoTao/design-taotao-editorial-trecomunicacao-04.jpg",
+                  "taotao/design-taotao-editorial-trecomunicacao-04.jpg",
               },
             ],
           ],
@@ -689,25 +689,25 @@ export default {
           ],
 
           thumb:
-            "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+            "harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+                  "harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
+                  "harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "Harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
+                  "harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
+                  "harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -724,33 +724,33 @@ export default {
           ],
 
           thumb:
-            "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+            "sol/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+                  "sol/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
+                  "sol/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "SOL _ SOLO/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
+                  "sol/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "SOL _ SOLO/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
+                  "sol/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "SOL _ SOLO/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
+                  "sol/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "SOL _ SOLO/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
+                  "sol/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -767,31 +767,31 @@ export default {
           ],
 
           thumb:
-            "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+            "studioma/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+                  "studioma/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
+                  "studioma/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
+                  "studioma/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
+                  "studioma/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
               },
             ],
           ],
         },
 
-        /* exemplo */
+        /* Fazenda Marilio */
         {
           titleProject: [
             { princialTitle: "Fazenda Marilio" },
@@ -804,7 +804,7 @@ export default {
             },
           ],
 
-          thumb: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
+          thumb: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [
             { subTitle: "Identidade Visual " },
             { subTitle: "Café Marilio" },
@@ -812,47 +812,47 @@ export default {
           outrosProjetos: [
             [
               {
-                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
+                fotos: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
               },
               {
-                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
-              },
-
-              {
-                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
+                fotos: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
               },
 
               {
-                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
+                fotos: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
+              },
+
+              {
+                fotos: "fazenda/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
-                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
+                fotos: "fazenda/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
             [
               {
                 fotos:
-                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
+                  "cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
+                  "cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
+                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
+                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
+                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
+                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
               },
             ],
           ],
