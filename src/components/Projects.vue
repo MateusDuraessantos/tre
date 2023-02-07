@@ -57,7 +57,7 @@
           <h4>Outros projetos</h4>
           <div class="outros">
             <div
-              @click="changeNumber(index), borda()"
+              @click="changeNumber(index)"
               v-for="(dataInfos, index) in projetos[indexOfTitles]
                 .outrosProjetos"
               :key="index"
