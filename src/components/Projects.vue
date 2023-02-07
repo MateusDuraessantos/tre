@@ -884,11 +884,11 @@ export default {
   methods: {
     changeNumber(x) {
       this.indexOfSubtitle = x;
-      console.log(this.indexOfSubtitle);
+      // console.log(this.indexOfSubtitle);
     },
     pop(n) {
       this.upPopup = !this.upPopup;
-      console.log(this.upPopup);
+      // console.log(this.upPopup);
       this.indexOfTitles = n;
       if (this.upPopup == true) {
         document.body.classList.add("overflowOn");
@@ -899,7 +899,7 @@ export default {
     },
     overlay(s) {
       var a = s.target.classList[0];
-      console.log(a);
+      // console.log(a);
       if (a == "overlay") {
         this.upPopup = !this.upPopup;
         document.body.classList.remove("overflowOn");
