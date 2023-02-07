@@ -9,16 +9,11 @@
                 design é <br />
                 <span>
                   inteligência <br />
-                  tornada visível</span
-                >
+                  tornada visível</span>
               </h1>
             </div>
             <figure>
-              <img
-                class="img"
-                src="../assets/banner/banner01.png"
-                alt="Banner com folhas de bambu"
-              />
+              <img class="img" src="../assets/banner/banner01.png" alt="Banner com folhas de bambu" />
             </figure>
           </div>
         </el-carousel-item>
@@ -33,11 +28,7 @@
               </h1>
             </div>
             <figure>
-              <img
-                class="img"
-                src="../assets/banner/banner02.png"
-                alt="Banner com circulos e folhas de palmeira"
-              />
+              <img class="img" src="../assets/banner/banner02.png" alt="Banner com circulos e folhas de palmeira" />
             </figure>
           </div>
         </el-carousel-item>
@@ -50,11 +41,7 @@
               </h1>
             </div>
             <figure>
-              <img
-                class="img"
-                src="../assets/banner/banner03.png"
-                alt="Banner com varias formas geográficas "
-              />
+              <img class="img" src="../assets/banner/banner03.png" alt="Banner com varias formas geográficas " />
             </figure>
           </div>
         </el-carousel-item>
@@ -71,11 +58,7 @@
               </h1>
             </div>
             <figure>
-              <img
-                class="img"
-                src="../assets/banner/banner04.png"
-                alt="Banner com icones de varios clientes"
-              />
+              <img class="img" src="../assets/banner/banner04.png" alt="Banner com icones de varios clientes" />
             </figure>
           </div>
         </el-carousel-item>
@@ -88,6 +71,8 @@ import Nav from "./Nav.vue";
 export default {
   components: { Nav },
   name: "Nav",
+
+  
 };
 </script>
 
@@ -111,6 +96,7 @@ export default {
   align-items: center;
   height: 100%;
 }
+
 .descricao_banner {
   position: absolute;
   display: flex;
@@ -143,11 +129,13 @@ span {
   .descricao_banner {
     justify-content: center;
   }
+
   .descricao_banner h1 {
     width: 100vw;
     text-align: center;
     font-size: 1.4em;
   }
+
   span {
     font-size: 24px;
   }

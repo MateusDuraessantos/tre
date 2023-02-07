@@ -4,7 +4,7 @@
       <figure>
         <img src="../assets/logoComNome.svg" />
       </figure>
-      <ul>
+      <ul @click="hashSemHash">
         <li><a href="#inicio">início</a></li>
         <li><a href="#nos">nós</a></li>
         <li><a href="#servicos">serviços</a></li>
@@ -21,6 +21,19 @@ export default {
       first: "nav",
     };
   },
+  methods: {
+    hashSemHash(e) {
+      setTimeout(() => {
+        history.pushState("", document.title, location.pathname)
+
+        e.preventDefault()
+      }, 3);
+
+    },
+  }
+
+
+
 };
 </script>
 <style scoped>
@@ -36,9 +49,11 @@ nav {
   background-size: cover;
   background: #f8f8f8;
 }
+
 .content_tabs {
   width: 70%;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -47,6 +62,7 @@ nav {
   width: 100%;
   max-width: var(--body_content_width);
 }
+
 figure {
   margin: 0;
 }
@@ -67,6 +83,7 @@ ul a {
   color: #777;
   transition: 0.2s;
 }
+
 ul a:hover {
   color: black;
   transition: 0.2s;

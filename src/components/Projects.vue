@@ -16,35 +16,22 @@
         <div class="grid_prof">
           <!-- 1° -->
           <div class="grid_prof--first">
-            <div
-              v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject"
-              :key="index"
-            >
+            <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
               <h3>{{ dataInfos.princialTitle }}</h3>
-              <div
-                class="description--popup"
-                v-for="(descricoesProjetc, index) in dataInfos.descricao"
-                :key="index"
-              >
+              <div class="description--popup" v-for="(descricoesProjetc, index) in dataInfos.descricao" :key="index">
                 {{ descricoesProjetc[indexOfSubtitle] }} <br />
               </div>
             </div>
           </div>
           <!-- 2° -->
           <div class="grid_prof--second">
-            <h4
-              v-for="(dataInfos, index) in projetos[indexOfTitles]
-                .titulosCarrossel[indexOfSubtitle]"
-              :key="index"
-            >
+            <h4 v-for="(dataInfos, index) in projetos[indexOfTitles]
+            .titulosCarrossel[indexOfSubtitle]" :key="index">
               {{ dataInfos }}
             </h4>
             <el-carousel arrow="always">
-              <el-carousel-item
-                v-for="(dataInfos, index) in projetos[indexOfTitles]
-                  .outrosProjetos[indexOfSubtitle]"
-                :key="index"
-              >
+              <el-carousel-item v-for="(dataInfos, index) in projetos[indexOfTitles]
+              .outrosProjetos[indexOfSubtitle]" :key="index">
                 <div class="img_container">
                   <img :src="dataInfos.fotos" :key="index" />
                 </div>
@@ -56,16 +43,9 @@
         <span v-if="projetos[indexOfTitles].outrosProjetos.length > 1">
           <h4>Outros projetos</h4>
           <div class="outros">
-            <div
-              @click="changeNumber(index)"
-              v-for="(dataInfos, index) in projetos[indexOfTitles]
-                .outrosProjetos"
-              :key="index"
-            >
-              <span
-                v-for="(thumbOutrosProjetos, index) in dataInfos[0]"
-                :key="index"
-              >
+            <div @click="changeNumber(index)" v-for="(dataInfos, index) in projetos[indexOfTitles]
+            .outrosProjetos" :key="index">
+              <span v-for="(thumbOutrosProjetos, index) in dataInfos[0]" :key="index">
                 <img class="trocarProjeto" :src="thumbOutrosProjetos" />
               </span>
             </div>
@@ -180,7 +160,7 @@ export default {
             { princialTitle: "Abrinq" },
             {
               descricao:
-               [[ "Somos parceiros desta organização há mais de 15 anos e prestamos serviços e suporte em design em muitos segmentos e necessidades, criação de marcas, identidade para campanhas e projetos e todo material editorial."]],
+                [["Somos parceiros desta organização há mais de 15 anos e prestamos serviços e suporte em design em muitos segmentos e necessidades, criação de marcas, identidade para campanhas e projetos e todo material editorial."]],
             },
           ],
 
@@ -214,7 +194,7 @@ export default {
             { princialTitle: "Black Dog" },
             {
               descricao:
-               [[ "A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca. Esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então, mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada."]],
+                [["A rede Black Dog de lanchonetes nos procurou para uma revitalização de marca. Esse trabalho veio carregado de uma percepção emocional muito importante, pois constatamos que a marca era extremamente querida pelos consumidores e não seria qualquer mudança que atenderia, então, mudar para deixar igual foi nossa missão. Profissionalizamos a comunicação sem perder a voz da marca que é simples e despojada."]],
             },
           ],
 
@@ -272,7 +252,7 @@ export default {
             { princialTitle: "Cantina Gigio" },
             {
               descricao:
-               [[ "Fomos procurados devido à necessidade de uma atualização na sua marca. Ao combinar valores tradicionais e contemporâneos, conseguimos alcançar um resultado limpo. Desenvolvemos desdobramentos da identidade da marca para cardápios e diversos materiais de comunicação visual para seus pontos de contato, serviços que oferecemos com frequência."]],
+                [["Fomos procurados devido à necessidade de uma atualização na sua marca. Ao combinar valores tradicionais e contemporâneos, conseguimos alcançar um resultado limpo. Desenvolvemos desdobramentos da identidade da marca para cardápios e diversos materiais de comunicação visual para seus pontos de contato, serviços que oferecemos com frequência."]],
             },
           ],
 
@@ -306,7 +286,7 @@ export default {
             { princialTitle: "CeC" },
             {
               descricao:
-               [[ "O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor."]],
+                [["O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor."]],
             },
           ],
 
@@ -388,7 +368,7 @@ export default {
             { princialTitle: "Livro Nuestra Familia" },
             {
               descricao:
-               [[ "A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material."]],
+                [["A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material."]],
             },
           ],
 
@@ -418,7 +398,7 @@ export default {
             { princialTitle: "Otoh" },
             {
               descricao:
-              [[  "Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras ”O”."]],
+                [["Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras ”O”."]],
             },
           ],
 
@@ -454,7 +434,7 @@ export default {
             { princialTitle: "Paineiras" },
             {
               descricao:
-               [[ "O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano."]],
+                [["O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano."]],
             },
           ],
 
@@ -496,7 +476,7 @@ export default {
             { princialTitle: "Renner Alchemia" },
             {
               descricao:
-               [[ "O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil."]],
+                [["O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil."]],
             },
           ],
 
@@ -522,7 +502,7 @@ export default {
             { princialTitle: "SAP" },
             {
               descricao:
-               [[ "Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play."]],
+                [["Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play."]],
             },
           ],
 
@@ -587,7 +567,7 @@ export default {
             { princialTitle: "4 Artes" },
             {
               descricao:
-             [[   "Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+                [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
             },
           ],
 
@@ -629,31 +609,31 @@ export default {
             [
               {
                 fotos:
-                "BlueBe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+                  "BlueBe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "BlueBe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
+                  "BlueBe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "BlueBe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
+                  "BlueBe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
+                  "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
+                  "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                "BlueBe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
+                  "BlueBe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "BlueBe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
+                  "BlueBe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -665,7 +645,7 @@ export default {
             { princialTitle: "Tao Tao" },
             {
               descricao:
-              [["Uma marca lúdica e cheia de empatia (um aceno) que cria surpresa e incita curiosidade. A ideia é que sua comunicação de marca abrace o imaginário de crianças."]],
+                [["Uma marca lúdica e cheia de empatia (um aceno) que cria surpresa e incita curiosidade. A ideia é que sua comunicação de marca abrace o imaginário de crianças."]],
             },
           ],
 
@@ -676,23 +656,23 @@ export default {
             [
               {
                 fotos:
-                "TaoTao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+                  "TaoTao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "TaoTao/design-taotao-editorial-trecomunicacao-01.jpg",
+                  "TaoTao/design-taotao-editorial-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "TaoTao/design-taotao-editorial-trecomunicacao-02.jpg",
+                  "TaoTao/design-taotao-editorial-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                "TaoTao/design-taotao-editorial-trecomunicacao-03.jpg",
+                  "TaoTao/design-taotao-editorial-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                "TaoTao/design-taotao-editorial-trecomunicacao-04.jpg",
+                  "TaoTao/design-taotao-editorial-trecomunicacao-04.jpg",
               },
             ],
           ],
@@ -704,7 +684,7 @@ export default {
             { princialTitle: "Harmonia" },
             {
               descricao:
-              [["Atendemos a empresa para refinar seu posicionamento e dar voz para a marca renovada. Também ajustamos o comportamento de linguagem para uso cromático e grafismos em sua comunicação."]],
+                [["Atendemos a empresa para refinar seu posicionamento e dar voz para a marca renovada. Também ajustamos o comportamento de linguagem para uso cromático e grafismos em sua comunicação."]],
             },
           ],
 
@@ -715,19 +695,19 @@ export default {
             [
               {
                 fotos:
-                "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+                  "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
+                  "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                "Harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
+                  "Harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "Harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
+                  "Harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -739,7 +719,7 @@ export default {
             { princialTitle: "SOL & SOLO" },
             {
               descricao:
-              [['A empresa de orgânicos Sol & Solo tinha um grande problema de sonoridade por conta da sua grafia "solesolo". Esse fato fazia entender uma única palavra e por mais que isso fosse explicado, as pessoas erravam sua pronúncia. Para dar um novo posicionamento à questão, realizamos um estudo para o naming utilizando o "&" comercial e redesenhamos a marca e sua identidade visual.']],
+                [['A empresa de orgânicos Sol & Solo tinha um grande problema de sonoridade por conta da sua grafia "solesolo". Esse fato fazia entender uma única palavra e por mais que isso fosse explicado, as pessoas erravam sua pronúncia. Para dar um novo posicionamento à questão, realizamos um estudo para o naming utilizando o "&" comercial e redesenhamos a marca e sua identidade visual.']],
             },
           ],
 
@@ -750,27 +730,27 @@ export default {
             [
               {
                 fotos:
-                "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+                  "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
+                  "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                "SOL _ SOLO/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
+                  "SOL _ SOLO/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "SOL _ SOLO/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
+                  "SOL _ SOLO/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                "SOL _ SOLO/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
+                  "SOL _ SOLO/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "SOL _ SOLO/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
+                  "SOL _ SOLO/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -782,7 +762,7 @@ export default {
             { princialTitle: "Studio Magaldi Paisagismo" },
             {
               descricao:
-              [["Nova marca e site para Studio Magaldi Paisagismo, diferentes possibilidades gerando visibilidade dos projetos e interação com maior profundidade em conteúdos, expondo a nova identidade de marca, afinal, marca é cultura."]],
+                [["Nova marca e site para Studio Magaldi Paisagismo, diferentes possibilidades gerando visibilidade dos projetos e interação com maior profundidade em conteúdos, expondo a nova identidade de marca, afinal, marca é cultura."]],
             },
           ],
 
@@ -793,19 +773,19 @@ export default {
             [
               {
                 fotos:
-                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
+                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
+                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
+                  "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
               },
             ],
           ],
@@ -882,6 +862,8 @@ export default {
   },
 
   methods: {
+
+
     changeNumber(x) {
       this.indexOfSubtitle = x;
       // console.log(this.indexOfSubtitle);
