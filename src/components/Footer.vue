@@ -26,13 +26,13 @@
       </div>
       <form
         class="container_input"
-        action="mailto:mateusduraessantos@gmail.com"
+        action="mailto:teclakeystudio@gmail.com"
         method="POST"
         enctype="text/plain"
       >
         <img class="graf" src="../assets/grafismo.svg" alt="" required />
         <input type="text" name="nome" placeholder="Nome" required />
-        <input type="text" name="email" placeholder="E-mail" required />
+        <input type="email" name="email" placeholder="E-mail" required />
         <textarea name="message" placeholder="Mensagem" />
         <input class="enviar" type="submit" value="enviar" />
       </form>

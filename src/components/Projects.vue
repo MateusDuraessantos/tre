@@ -59,7 +59,7 @@
               :key="index"
             >
               <span
-                v-for="(thumbOutrosProjetos, idex) in dataInfos[0]"
+                v-for="(thumbOutrosProjetos, index) in dataInfos[0]"
                 :key="index"
               >
                 <img class="trocarProjeto" :src="thumbOutrosProjetos" />
@@ -577,7 +577,7 @@ export default {
           ],
         },
 
-        // Novo Projeto 
+        // 4 Artes 
         {
           titleProject: [
             { princialTitle: "4 Artes" },
@@ -603,6 +603,205 @@ export default {
               {
                 fotos:
                   "4 Artes/design-4-artes-identidade-trecomunicacao-03.jpg",
+              },
+            ],
+          ],
+        },
+
+        // BlueBe 
+        {
+          titleProject: [
+            { princialTitle: "BlueBe" },
+            {
+              descricao:
+                [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+            },
+          ],
+
+          thumb:
+            "BlueBe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                "BlueBe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "BlueBe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "BlueBe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "BlueBe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                "BlueBe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "BlueBe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+
+        // TaoTao
+        {
+          titleProject: [
+            { princialTitle: "TaoTao" },
+            {
+              descricao:
+              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+            },
+          ],
+
+          thumb:
+            "TaoTao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                "TaoTao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "TaoTao/design-taotao-editorial-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "TaoTao/design-taotao-editorial-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                "TaoTao/design-taotao-editorial-trecomunicacao-03.jpg",
+              },
+              {
+                fotos:
+                "TaoTao/design-taotao-editorial-trecomunicacao-04.jpg",
+              },
+            ],
+          ],
+        },
+
+        // Harmonia
+        {
+          titleProject: [
+            { princialTitle: "Harmonia" },
+            {
+              descricao:
+              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+            },
+          ],
+
+          thumb:
+            "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "Harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                "Harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "Harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+
+        // SOL SOLO
+        {
+          titleProject: [
+            { princialTitle: "SOL & SOLO" },
+            {
+              descricao:
+              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+            },
+          ],
+
+          thumb:
+            "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "SOL _ SOLO/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                "SOL _ SOLO/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "SOL _ SOLO/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                "SOL _ SOLO/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "SOL _ SOLO/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+
+        // Studio Magaldi Paisagismo
+        {
+          titleProject: [
+            { princialTitle: "Studio Magaldi Paisagismo" },
+            {
+              descricao:
+              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+            },
+          ],
+
+          thumb:
+            "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                "Studio Magaldi Paisagismo/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
               },
             ],
           ],
