@@ -814,86 +814,65 @@ export default {
         /* exemplo */
         {
           titleProject: [
-            { princialTitle: "Projeto Exemplo" },
+            { princialTitle: "Fazenda Marilio" },
             {
               descricao: [[
-                "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
-                "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
-                "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
-                "4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4",
+                'A Fazenda Marílio contratou-nos para desenvolver sua identidade visual. Para esta produtora de café de alta qualidade, optamos por retratar uma "janela para o campo", permitindo que seus apreciadores possam visualizar a plantação desta cultura.',
+                "A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.",
               ]
               ]
             },
           ],
 
-          thumb: "projeto_exemplo/1/fazedores1.jpg",
+          thumb: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [
-            { subTitle: "Exemplo 1" },
-            { subTitle: "Exemplo 2" },
-            { subTitle: "Exemplo 3" },
-            { subTitle: "Exemplo 4" },
+            { subTitle: "Identidade Visual " },
+            { subTitle: "Café Marilio" },
           ],
           outrosProjetos: [
             [
               {
-                fotos: "projeto_exemplo/1/fazedores1.jpg",
+                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
               },
               {
-                fotos: "projeto_exemplo/1/fazedores2.jpg",
-              },
-
-              {
-                fotos: "projeto_exemplo/1/fazedores3.jpg",
+                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
               },
 
               {
-                fotos: "projeto_exemplo/1/fazedores4.jpg",
+                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
+              },
+
+              {
+                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos: "Fazenda Marilio - 1 Empresa/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
             [
               {
                 fotos:
-                  "projeto_exemplo/2/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "projeto_exemplo/2/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
+                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "projeto_exemplo/2/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
-              },
-            ],
-            [
-              {
-                fotos:
-                  "projeto_exemplo/3/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "projeto_exemplo/3/design-palafita-editorial-folder-trecomunicacao-01.jpg",
+                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "projeto_exemplo/3/design-palafita-editorial-folder-trecomunicacao-02.jpg",
+                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "projeto_exemplo/3/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
-              },
-            ],
-            [
-              {
-                fotos:
-                  "projeto_exemplo/4/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "projeto_exemplo/4/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "projeto_exemplo/4/design-sap-identidade-podcast-trecomunicacao-01.jpg",
+                  "Fazenda Marilio - 2 Café Marcéu (Produto)/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
               },
             ],
           ],
@@ -1040,7 +1019,7 @@ h4 {
 
 .outros {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 30px;
   gap: 6px;
 }
