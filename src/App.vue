@@ -1,14 +1,14 @@
 <template>
-  <Nav/>
-  <Header/>
+  <Nav />
+  <Header />
   <main>
-    <Nos/>
-    <Servicos/>
-    <Projects/>
+    <Nos />
+    <Servicos />
+    <Projects />
     <!-- router -->
     <router-view></router-view>
   </main>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
@@ -45,8 +45,7 @@ export default {
 
 .overflowOn {
   overflow-y: hidden;
-  margin-right: 11px;
-
+  margin-right: 12px;
 }
 
 #navHeader {
@@ -61,6 +60,8 @@ export default {
   box-sizing: border-box;
 }
 
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -68,7 +69,9 @@ body {
   padding: 0;
   padding-top: 60px;
   box-sizing: border-box;
+
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -82,10 +85,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
-/* [gap_bottom] {
-  margin-bottom: 75px;
-} */
 
 #nos,
 #projetos,
@@ -117,7 +116,7 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 900;
-  margin-top:70px  ;
+  margin-top: 70px;
 
 }
 
@@ -146,19 +145,22 @@ main {
 
 .demo-tabs .el-tab-pane {
   height: 100px;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 900px) {
-  /*   .demo-tabs .el-tab-pane {
+  .demo-tabs .el-tab-pane {
     height: 200px;
-    overflow: auto;
-  } */
+  }
 
+  .overflowOn {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   main {
-    margin: 0 10px;
+    margin: 0 14px;
   }
 }
 </style>

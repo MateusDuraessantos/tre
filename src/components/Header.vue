@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .banner {
-  width: calc(100vw - 17px);
+  width: calc(100vw - 12px);
   overflow: hidden;
   box-sizing: border-box;
 }

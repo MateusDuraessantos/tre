@@ -873,8 +873,10 @@ export default {
       // console.log(this.upPopup);
       this.indexOfTitles = n;
       if (this.upPopup == true) {
+       
         document.body.classList.add("overflowOn");
       } else {
+        document.querySelector('.flex').style.marginLeft = ''
         document.body.classList.remove("overflowOn");
       }
       this.indexOfSubtitle = 0;
