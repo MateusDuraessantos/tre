@@ -21,8 +21,12 @@
               :key="index"
             >
               <h3>{{ dataInfos.princialTitle }}</h3>
-              <div class="description--popup" v-for="(descricoesProjetc, index) in dataInfos.descricao" :key="index">
-                {{ descricoesProjetc[indexOfSubtitle] }} <br>
+              <div
+                class="description--popup"
+                v-for="(descricoesProjetc, index) in dataInfos.descricao"
+                :key="index"
+              >
+                {{ descricoesProjetc[indexOfSubtitle] }} <br />
               </div>
             </div>
           </div>
@@ -614,7 +618,7 @@ export default {
             { princialTitle: "BlueBe" },
             {
               descricao:
-                [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+                [["A escola com linha educacional baseada na pedagogia de Emilia Reggio nos procurou para ajustar sua comunicação, e sua linha pedagógica foi a inspiração e parte da pesquisa para a linguagem desta marca que também recebeu um novo estudo de naming."]],
             },
           ],
 
@@ -658,10 +662,10 @@ export default {
         // TaoTao
         {
           titleProject: [
-            { princialTitle: "TaoTao" },
+            { princialTitle: "Tao Tao" },
             {
               descricao:
-              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+              [["Uma marca lúdica e cheia de empatia (um aceno) que cria surpresa e incita curiosidade. A ideia é que sua comunicação de marca abrace o imaginário de crianças."]],
             },
           ],
 
@@ -700,7 +704,7 @@ export default {
             { princialTitle: "Harmonia" },
             {
               descricao:
-              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+              [["Atendemos a empresa para refinar seu posicionamento e dar voz para a marca renovada. Também ajustamos o comportamento de linguagem para uso cromático e grafismos em sua comunicação."]],
             },
           ],
 
@@ -735,7 +739,7 @@ export default {
             { princialTitle: "SOL & SOLO" },
             {
               descricao:
-              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+              [['A empresa de orgânicos Sol & Solo tinha um grande problema de sonoridade por conta da sua grafia "solesolo". Esse fato fazia entender uma única palavra e por mais que isso fosse explicado, as pessoas erravam sua pronúncia. Para dar um novo posicionamento à questão, realizamos um estudo para o naming utilizando o "&" comercial e redesenhamos a marca e sua identidade visual.']],
             },
           ],
 
@@ -778,7 +782,7 @@ export default {
             { princialTitle: "Studio Magaldi Paisagismo" },
             {
               descricao:
-              [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+              [["Nova marca e site para Studio Magaldi Paisagismo, diferentes possibilidades gerando visibilidade dos projetos e interação com maior profundidade em conteúdos, expondo a nova identidade de marca, afinal, marca é cultura."]],
             },
           ],
 
