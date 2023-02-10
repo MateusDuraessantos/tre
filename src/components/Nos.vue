@@ -1,11 +1,7 @@
 <template>
   <section id="nos">
     <h2>nós</h2>
-    <el-tabs
-      v-model="first"
-      class="demo-tabs tabs_nos"
-      @tab-click="handleClick"
-    >
+    <el-tabs v-model="first" class="demo-tabs tabs_nos" @tab-click="handleClick">
       <el-tab-pane label="histórico" name="first">
         A Tre Comunicação atua no mercado de design desde 1990, quando fundada
         pelo designer Kito Castanha. Geradora de competências ao relacionar
@@ -73,7 +69,9 @@ export default {
 .tabs_nos .el-tabs__item.is-active {
   color: #ffc800;
 }
+
 .tabs_nos .el-tabs__active-bar {
   background: #ffc800;
 }
+
 </style>

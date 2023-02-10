@@ -27,7 +27,17 @@
 
             <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
               <div class="description--popup" v-for="(descricoesProjetc, index) in dataInfos.descricao" :key="index">
-                {{ descricoesProjetc[indexOfSubtitle] }} <br />
+
+                <div
+                  v-if="!(descricoesProjetc[indexOfSubtitle].substr(0, 27) === 'A marca para linha de cafés' || descricoesProjetc[indexOfSubtitle].substr(0, 27) === 'A Fazenda Marílio contratou')">
+                  {{ descricoesProjetc[indexOfSubtitle] }}
+                </div>
+
+                <div class="description--height"
+                  v-if="descricoesProjetc[indexOfSubtitle].substr(0, 27) === 'A Fazenda Marílio contratou' || descricoesProjetc[indexOfSubtitle].substr(0, 27) === 'A marca para linha de cafés'">
+                  {{ descricoesProjetc[indexOfSubtitle] }}
+
+                </div>
               </div>
             </div>
           </div>
@@ -43,12 +53,12 @@
               </el-carousel-item>
             </el-carousel>
           </div>
-        
+
         </div>
 
         <span v-if="projetos[indexOfTitles].outrosProjetos.length > 1">
-         
-          <h4>Outros projetos</h4>
+
+          <h4 style="padding-top: 12px;">Outros projetos</h4>
           <div class="outros">
             <div @click="changeNumber(index)" v-for="(dataInfos, index) in projetos[indexOfTitles]
             .outrosProjetos" :key="index">
@@ -69,6 +79,7 @@ export default {
       upPopup: false,
       indexOfTitles: 0,
       indexOfSubtitle: 0,
+      s: null,
 
       projetos: [
         /* Palafita */
@@ -753,11 +764,11 @@ export default {
         /* Fazenda Marilio */
         {
           titleProject: [
-            { princialTitle: "Fazenda Marilio" },
+            { princialTitle: "Fazenda Marílio" },
             {
               descricao: [[
                 'A Fazenda Marílio contratou-nos para desenvolver sua identidade visual. Para esta produtora de café de alta qualidade, optamos por retratar uma "janela para o campo", permitindo que seus apreciadores possam visualizar a plantação desta cultura.',
-                `A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.`,
+                'A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.',
               ]
               ]
             },
@@ -766,7 +777,7 @@ export default {
           thumb: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [
             { subTitle: "Identidade Visual " },
-            { subTitle: "Café Marilio" },
+            { subTitle: "Café Marcéu" },
           ],
           outrosProjetos: [
             [
@@ -821,8 +832,6 @@ export default {
   },
 
   methods: {
-
-
     changeNumber(x) {
       this.indexOfSubtitle = x;
       // console.log(this.indexOfSubtitle);
@@ -846,6 +855,8 @@ export default {
       if (a == "overlay") {
         this.upPopup = !this.upPopup;
         document.body.classList.remove("overflowOn");
+        this.s = document.querySelector(".description--popup")
+        console.log(this.s.scrollHeight);
       }
     },
   },
@@ -926,6 +937,8 @@ h4 {
 
 .description--popup {
   font-size: 16px;
+  line-height: 17px;
+  /* height: 100px; */
 }
 
 .close {
@@ -952,7 +965,6 @@ h4 {
   gap: 20px;
   grid-template-columns: 1fr 450px;
   grid-template-areas: "f1 f2";
-  margin-bottom: 12px;
 }
 
 .grid_prof--first {
@@ -961,7 +973,7 @@ h4 {
 
 .grid_prof--second {
   grid-area: f2;
-  
+
 }
 
 .img_container {
@@ -1015,7 +1027,7 @@ h4 {
   }
 
   .pop_content {
-    width: calc(100% - 24px);
+    width: calc(70% - 24px);
     padding: 12px;
     max-height: calc(100vh - 24px);
     overflow-y: auto;
@@ -1023,6 +1035,10 @@ h4 {
 
   .description--popup {
     font-size: 14px;
+    
+  }
+  
+  .description--height{
     min-height: 110px;
 
   }
@@ -1030,6 +1046,19 @@ h4 {
   .grid_prof {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "f2 f2" "f1 f1";
+  }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .pop_content {
+    width: calc(100% - 24px);
+  }
+
+  .content_projetos {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1050,8 +1079,5 @@ h4 {
     overflow-y: auto;
   }
 
-  .content_projetos {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 </style>

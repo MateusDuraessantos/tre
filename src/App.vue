@@ -155,7 +155,7 @@ main {
 
 @media only screen and (max-width: 900px) {
   .demo-tabs .el-tab-pane {
-    height: 200px;
+    height: 180px;
   }
 
   .mg-right-nav {
@@ -167,7 +167,16 @@ main {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
+  #nos .demo-tabs .el-tab-pane {
+    height: 250px;
+    overflow: auto;
+  }
+
+  #servicos h2 {
+    margin-top: 40px;
+  }
+
   main {
     margin: 0 14px;
   }
