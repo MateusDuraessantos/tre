@@ -18,6 +18,14 @@
           <div class="grid_prof--first">
             <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
               <h3>{{ dataInfos.princialTitle }}</h3>
+            </div>
+
+            <h4 v-for="(subTitleProject, index) in projetos[indexOfTitles].titulosCarrossel[indexOfSubtitle]"
+              :key="index">
+              {{ subTitleProject }}
+            </h4>
+
+            <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
               <div class="description--popup" v-for="(descricoesProjetc, index) in dataInfos.descricao" :key="index">
                 {{ descricoesProjetc[indexOfSubtitle] }} <br />
               </div>
@@ -25,11 +33,8 @@
           </div>
           <!-- 2° -->
           <div class="grid_prof--second">
-            <h4 v-for="(dataInfos, index) in projetos[indexOfTitles]
-            .titulosCarrossel[indexOfSubtitle]" :key="index">
-              {{ dataInfos }}
-            </h4>
-            <el-carousel arrow="always">
+
+            <el-carousel trigger="click" arrow="always">
               <el-carousel-item v-for="(dataInfos, index) in projetos[indexOfTitles]
               .outrosProjetos[indexOfSubtitle]" :key="index">
                 <div class="img_container">
@@ -38,9 +43,11 @@
               </el-carousel-item>
             </el-carousel>
           </div>
+        
         </div>
 
         <span v-if="projetos[indexOfTitles].outrosProjetos.length > 1">
+         
           <h4>Outros projetos</h4>
           <div class="outros">
             <div @click="changeNumber(index)" v-for="(dataInfos, index) in projetos[indexOfTitles]
@@ -64,54 +71,6 @@ export default {
       indexOfSubtitle: 0,
 
       projetos: [
-        /* 
-        Extrutura padrão dos projetos, NÃO DELETAR!
-        {
-          titleProject: [
-            { princialTitle: "Titulo principal do projeto" },
-            {
-              descricao:
-                "Descrição do projeto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur doloribus blanditiis corporis consequuntur sit facere quisquam reiciendis aperiam dolorum amet, qui voluptatibus totam aspernatur, expedita incidunt suscipit temporibus nihil.",
-            },
-          ],
-
-          thumb: "Adicionar caminho da thumbnail Principal do projeto",
-          titulosCarrossel: [
-            { subTitle: "Primeiro título do projeto" },
-            { subTitle: "Segundo título do projeto" },
-          ],
-          outrosProjetos: [
-            [
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-            ],
-            [
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-              {
-                fotos: "Caminho das imagens do carrossel",
-              },
-            ],
-          ],
-        }, */
-
         /* Palafita */
         {
           titleProject: [
@@ -798,7 +757,7 @@ export default {
             {
               descricao: [[
                 'A Fazenda Marílio contratou-nos para desenvolver sua identidade visual. Para esta produtora de café de alta qualidade, optamos por retratar uma "janela para o campo", permitindo que seus apreciadores possam visualizar a plantação desta cultura.',
-                "A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.",
+                `A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.`,
               ]
               ]
             },
@@ -893,6 +852,15 @@ export default {
 };
 </script>
 
+<style>
+.el-carousel__button {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 3px !important;
+  border-radius: 50% !important;
+}
+</style>
+
 <style scoped>
 h2 {
   color: #28b2ed;
@@ -984,6 +952,7 @@ h4 {
   gap: 20px;
   grid-template-columns: 1fr 450px;
   grid-template-areas: "f1 f2";
+  margin-bottom: 12px;
 }
 
 .grid_prof--first {
@@ -992,6 +961,7 @@ h4 {
 
 .grid_prof--second {
   grid-area: f2;
+  
 }
 
 .img_container {
@@ -1053,6 +1023,8 @@ h4 {
 
   .description--popup {
     font-size: 14px;
+    min-height: 110px;
+
   }
 
   .grid_prof {

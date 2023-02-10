@@ -1,7 +1,7 @@
 <template>
   <header class="banner" id="inicio">
     <div class="block text-center">
-      <el-carousel height="60vh" arrow="always">
+      <el-carousel trigger="click" :interval="7000" height="60vh" arrow="always">
         <el-carousel-item>
           <div class="container_descricao">
             <div class="descricao_banner">
@@ -72,7 +72,7 @@ export default {
   components: { Nav },
   name: "Nav",
 
-  
+
 };
 </script>
 
