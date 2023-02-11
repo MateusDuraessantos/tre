@@ -1,14 +1,17 @@
 <template>
-  <Nav />
-  <Header />
-  <main>
-    <Nos />
-    <Servicos />
-    <Projects />
-    <!-- router -->
-    <router-view></router-view>
-  </main>
-  <Footer />
+  <div>
+    <router-view />
+    <Nav />
+    <Header />
+    <main>
+      <Nos />
+      <Servicos />
+      <Projects />
+      <!-- router -->
+      <router-view></router-view>
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <script>

@@ -1,17 +1,18 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-// import HelloWorld from "../components/HelloWorld.vue";
+import { createRouter, createWebHistory } from 'vue-router'
+import SucessoTre from '../SucessoTre.vue'
 
 const routes = [
- /*  {
-    path: "/HelloWorld",
-    name: "HelloWorld",
-    component: HelloWorld,
-  }, */
-];
+  {
+    path: '/SucessoTre',
+    name: 'SucessoTre',
+    component: SucessoTre
+  },
+  
+]
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-});
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
 
-export default router;
+export default router
