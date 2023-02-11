@@ -30,8 +30,6 @@ export default {
   width: 100%;
   position: relative;
 }
-
-
 .c-sucesso {
   display: flex;
   flex-direction: column;

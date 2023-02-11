@@ -1,11 +1,7 @@
 <template>
   <footer id="footer">
     <figure>
-      <img
-        class="imagem_background"
-        src="../assets/banner/banner02.png"
-        alt="fundo branco com folhas"
-      />
+      <img class="imagem_background" src="../assets/banner/banner02.png" alt="fundo branco com folhas" />
     </figure>
     <section class="footer_container">
       <div class="section">
@@ -14,38 +10,39 @@
             <img src="../assets/icons/email.svg" />
             <p>contato@tre.art.br</p>
           </div>
-          <a
-            href="https://www.instagram.com/trecomunicacao/"
-            target="blank_"
-            class="contato"
-          >
+          <a href="https://www.instagram.com/trecomunicacao/" target="blank_" class="contato">
             <img src="../assets/icons/insta.svg" />
             <p>@trecomunicacao</p>
           </a>
         </div>
       </div>
-      <form
-        class="container_input"
-        action="mailto:teclakeystudio@gmail.com"
-        method="POST"
-        enctype="text/plain"
-      >
+      <!-- 
+      <form class="container_input" action="mailto:teclakeystudio@gmail.com" method="POST" enctype="text/plain">
         <img class="graf" src="../assets/grafismo.svg" alt="" required />
         <input type="text" name="nome" placeholder="Nome" required />
         <input type="email" name="email" placeholder="E-mail" required />
         <textarea name="message" placeholder="Mensagem" />
         <input class="enviar" type="submit" value="enviar" />
       </form>
+    -->
+
+
+      <form class="container_input" action="https://formsubmit.co/pqamzwoey@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="http://localhost:8080/contato">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <textarea name="message" placeholder="Messagem" required></textarea>
+        <!-- your other form fields go here -->
+        <button class="enviar" type="submit">Send</button>
+      </form>
+
+
     </section>
   </footer>
 </template>
 
 <script>
-
-
-
-
-
 export default {
   name: "Footer",
 
@@ -81,6 +78,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .contato {
   display: flex;
   align-items: center;
@@ -92,11 +90,13 @@ footer {
   width: 20px;
   height: 20px;
 }
+
 p {
   display: inline-block;
   margin: 0;
   color: #666666;
 }
+
 .imagem_background {
   position: absolute;
   opacity: 0.3;
@@ -107,9 +107,11 @@ p {
   top: 0;
   left: 0;
 }
+
 figure {
   margin: 0;
 }
+
 .container_input {
   position: relative;
   display: flex;
@@ -146,6 +148,7 @@ textarea {
 input::placeholder {
   font-weight: 300;
 }
+
 textarea:focus,
 input:focus {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
@@ -171,6 +174,6 @@ input:focus {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 450px) {
-}
+
+@media only screen and (max-width: 450px) {}
 </style>

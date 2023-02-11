@@ -3,11 +3,10 @@ import SucessoTre from '../SucessoTre.vue'
 
 const routes = [
   {
-    path: '/SucessoTre',
+    path: '/contato',
     name: 'SucessoTre',
     component: SucessoTre
   },
-  
 ]
 
 const router = createRouter({
