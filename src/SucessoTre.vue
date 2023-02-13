@@ -12,7 +12,6 @@
           em breve entraremos em contato
         </p>
       </div>
-
       <a href="/" @click="showSucesso" class="sucesso__voltar">Voltar</a>
       <img class="sucesso__background" src="banner02.png">
     </div>
@@ -28,6 +27,8 @@ export default {
     }
   },
   mounted() {
+    document.querySelector('body').style.paddingTop = '0'
+
     this.showSucesso()
   }
 }
@@ -38,7 +39,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 60px);
+  height: 100vh;
   width: 100%;
   position: relative;
 }

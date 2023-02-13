@@ -17,7 +17,7 @@
         </div>
       </div>
       <form class="container_input" action="https://formsubmit.co/contato@tre.art.br" method="POST">
-        <input type="hidden" name="_next" value="http://localhost:8080/contato">
+        <input type="hidden" name="_next" value="https://tre-art-4b66f.web.app/contato">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" placeholder="Messagem" required></textarea>

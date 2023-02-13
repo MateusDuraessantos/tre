@@ -1,10 +1,8 @@
 <template>
   <div>
-    <Nav />
-    <span>
-      <router-view @showSucesso="show" />
-    </span>
+    <router-view @showSucesso="show" />
     <span v-if="showUp">
+      <Nav />
       <Header />
       <main>
         <Nos />
