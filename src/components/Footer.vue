@@ -16,28 +16,13 @@
           </a>
         </div>
       </div>
-      <!-- 
-      <form class="container_input" action="mailto:teclakeystudio@gmail.com" method="POST" enctype="text/plain">
-        <img class="graf" src="../assets/grafismo.svg" alt="" required />
-        <input type="text" name="nome" placeholder="Nome" required />
-        <input type="email" name="email" placeholder="E-mail" required />
-        <textarea name="message" placeholder="Mensagem" />
-        <input class="enviar" type="submit" value="enviar" />
-      </form>
-    -->
-
-
-      <form class="container_input" action="https://formsubmit.co/pqamzwoey@gmail.com" method="POST">
+      <form class="container_input" action="https://formsubmit.co/contato@tre.art.br" method="POST">
         <input type="hidden" name="_next" value="http://localhost:8080/contato">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
-
         <textarea name="message" placeholder="Messagem" required></textarea>
-        <!-- your other form fields go here -->
-        <button class="enviar" type="submit">Send</button>
+        <button class="enviar" type="submit">Enviar</button>
       </form>
-
-
     </section>
   </footer>
 </template>
@@ -45,7 +30,6 @@
 <script>
 export default {
   name: "Footer",
-
 };
 </script>
 

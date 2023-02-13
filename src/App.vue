@@ -1,16 +1,18 @@
 <template>
   <div>
-    <router-view />
     <Nav />
-    <Header />
-    <main>
-      <Nos />
-      <Servicos />
-      <Projects />
-      <!-- router -->
-      <router-view></router-view>
-    </main>
-    <Footer />
+    <span>
+      <router-view @showSucesso="show" />
+    </span>
+    <span v-if="showUp">
+      <Header />
+      <main>
+        <Nos />
+        <Servicos />
+        <Projects />
+      </main>
+      <Footer />
+    </span>
   </div>
 </template>
 
@@ -28,8 +30,15 @@ export default {
     return {
       first: "first",
       primeiro: "primeiro",
-    };
+      showUp: true
+    }
   },
+  methods: {
+    show() {
+      this.showUp = !this.showUp
+      console.log('App!')
+    }
+  }
 };
 </script>
 
