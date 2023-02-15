@@ -1,23 +1,23 @@
 <template>
   <footer id="footer">
     <figure>
-      <img class="imagem_background" src="../assets/banner/banner02.png" alt="fundo branco com folhas" />
+      <img class="imagem_background" src="imagens_site_tre_2023/banner/banner02.png" alt="fundo branco com folhas" />
     </figure>
     <section class="footer_container">
       <div class="section">
         <div>
           <div class="contato">
-            <img src="../assets/icons/email.svg" />
+            <img src="imagens_site_tre_2023/assets/icons/email.svg" />
             <p>contato@tre.art.br</p>
           </div>
           <a href="https://www.instagram.com/trecomunicacao/" target="blank_" class="contato">
-            <img src="../assets/icons/insta.svg" />
+            <img src="imagens_site_tre_2023/assets/icons/insta.svg" />
             <p>@trecomunicacao</p>
           </a>
         </div>
       </div>
       <form class="container_input" action="https://formsubmit.co/contato@tre.art.br" method="POST">
-        <input type="hidden" name="_next" value="https://tre-art-4b66f.web.app/contato">
+        <input type="hidden" name="_next" value="http://tre.art.br/contato">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" placeholder="Messagem" required></textarea>

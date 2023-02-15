@@ -11,7 +11,7 @@
     <div class="overlay" @click="overlay" v-if="upPopup">
       <div class="pop_content">
         <button class="close" @click="pop()">
-          <img src="../assets/icons/close.svg" alt="close" />
+          <img src="imagens_site_tre_2023/assets/icons/close.svg" alt="close" />
         </button>
         <div class="grid_prof">
           <!-- 1° -->
@@ -93,33 +93,33 @@ export default {
           ],
 
           thumb:
-            "palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "palafita/design-palafita-editorial-folder-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/palafita/design-palafita-editorial-folder-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "palafita/design-palafita-editorial-folder-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/palafita/design-palafita-editorial-folder-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "palafita/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/palafita/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "palafita/design-palafita-identidade-papelaria-cartao-visita-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/palafita/design-palafita-identidade-papelaria-cartao-visita-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "palafita/design-palafita-identidade-web-site-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/palafita/design-palafita-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -135,25 +135,25 @@ export default {
           ],
 
           thumb:
-            "abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
+            "imagens_site_tre_2023/abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
+                  "imagens_site_tre_2023/abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
               },
               {
                 fotos:
-                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/abrinq/design-abrinq-editorial-relatorios-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/abrinq/design-abrinq-editorial-relatorios-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "abrinq/design-abrinq-editorial-relatorios-trecomunicacao-04.jpg",
+                  "imagens_site_tre_2023/abrinq/design-abrinq-editorial-relatorios-trecomunicacao-04.jpg",
               },
             ],
           ],
@@ -169,29 +169,29 @@ export default {
           ],
 
           thumb:
-            "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
+            "imagens_site_tre_2023/black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
+                  "imagens_site_tre_2023/black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
               },
               {
                 fotos:
-                  "black_dog/design-black-dog-editorial-cardapio-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/black_dog/design-black-dog-editorial-cardapio-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "black_dog/design-black-dog-editorial-cardapio-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/black_dog/design-black-dog-editorial-cardapio-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "black_dog/design-black-dog-editorial-manual-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/black_dog/design-black-dog-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "black_dog/design-black-dog-merchandising-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/black_dog/design-black-dog-merchandising-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -206,12 +206,12 @@ export default {
             },
           ],
 
-          thumb: "canon/design-canon-editorial-trecomunicacao.jpg",
+          thumb: "imagens_site_tre_2023/canon/design-canon-editorial-trecomunicacao.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
-                fotos: "canon/design-canon-editorial-trecomunicacao.jpg",
+                fotos: "imagens_site_tre_2023/canon/design-canon-editorial-trecomunicacao.jpg",
               },
             ],
           ],
@@ -227,25 +227,25 @@ export default {
           ],
 
           thumb:
-            "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cantina_gigio/design-cantina-gigio-capa-editorial-cardapio-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cantina_gigio/design-cantina-gigio-merchandising-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cantina_gigio/design-cantina-gigio-merchandising-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/cantina_gigio/design-cantina-gigio-redes_sociais-trecomunicacao-02.jpg",
               },
             ],
           ],
@@ -261,33 +261,33 @@ export default {
           ],
 
           thumb:
-            "cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cec/design-cec-casanova-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cec/design-cec-casanova-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cec/design-cec-casanova-identidade-embalagem-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/cec/design-cec-casanova-identidade-embalagem-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "cec/design-cec-metropac-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cec/design-cec-metropac-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cec/design-cec-smart-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cec/design-cec-smart-identidade-embalagem-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -303,31 +303,31 @@ export default {
           ],
 
           thumb:
-            "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/exp/design-exp-capa-redes-sociais-instagram-trecomunicacao-02.jpg",
               },
               {
-                fotos: "exp/design-exp-editorial-agenda-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "exp/design-exp-identidade-apresentacao-comercial-powerpoint-trecomunicacao-01.jpg",
+                fotos: "imagens_site_tre_2023/exp/design-exp-editorial-agenda-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "exp/design-exp-identidade-papelaria-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/exp/design-exp-identidade-apresentacao-comercial-powerpoint-trecomunicacao-01.jpg",
               },
               {
-                fotos: "exp/design-exp-sinalizacao-trecomunicacao-01.jpg",
+                fotos:
+                  "imagens_site_tre_2023/exp/design-exp-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos: "imagens_site_tre_2023/exp/design-exp-sinalizacao-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -343,21 +343,21 @@ export default {
           ],
 
           thumb:
-            "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
               },
             ],
           ],
@@ -372,28 +372,28 @@ export default {
             },
           ],
 
-          thumb: "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+          thumb: "imagens_site_tre_2023/otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
-                fotos: "otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+                fotos: "imagens_site_tre_2023/otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "otoh/design-otoh-editorial-agenda-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/otoh/design-otoh-editorial-agenda-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "otoh/design-otoh-editorial-cartaz-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/otoh/design-otoh-editorial-cartaz-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "otoh/design-otoh-editorial-manual-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/otoh/design-otoh-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "otoh/design-otoh-identidade-web-site-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/otoh/design-otoh-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -409,33 +409,33 @@ export default {
           ],
 
           thumb:
-            "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "paineiras/design-paineiras-editorial-livro-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-livro-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "paineiras/design-paineiras-editorial-livro-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-livro-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "paineiras/design-paineiras-editorial-revista-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-revista-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "paineiras/design-paineiras-editorial-revista-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-revista-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "paineiras/design-paineiras-sinalizacao-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-sinalizacao-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -451,17 +451,17 @@ export default {
           ],
 
           thumb:
-            "renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "renner/design-renner-alchemia-embalagem-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/renner/design-renner-alchemia-embalagem-trecomunicacao-02.jpg",
               },
             ],
           ],
@@ -476,21 +476,21 @@ export default {
             },
           ],
 
-          thumb: "sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+          thumb: "imagens_site_tre_2023/sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "sap/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sap/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "sap/design-sap-identidade-podcast-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sap/design-sap-identidade-podcast-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -507,25 +507,25 @@ export default {
           ],
 
           thumb:
-            "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "temra/design-temra-identidade-embalagem-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/temra/design-temra-identidade-embalagem-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "temra/design-temra-identidade-papelaria-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/temra/design-temra-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "temra/design-temra-identidade-site-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/temra/design-temra-identidade-site-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -542,21 +542,21 @@ export default {
           ],
 
           thumb:
-            "artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "artes/design-4-artes-identidade-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "artes/design-4-artes-identidade-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-03.jpg",
               },
             ],
           ],
@@ -573,37 +573,37 @@ export default {
           ],
 
           thumb:
-            "bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "bluebe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "bluebe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "bluebe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "bluebe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "bluebe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "bluebe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -620,29 +620,29 @@ export default {
           ],
 
           thumb:
-            "taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "taotao/design-taotao-editorial-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "taotao/design-taotao-editorial-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "taotao/design-taotao-editorial-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "taotao/design-taotao-editorial-trecomunicacao-04.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-04.jpg",
               },
             ],
           ],
@@ -659,25 +659,25 @@ export default {
           ],
 
           thumb:
-            "harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/harmonia/design-harmonia-capa-identidade-redes-sociais-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/harmonia/design-harmonia-editorial-maual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/harmonia/design-harmonia-editorial-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -694,33 +694,33 @@ export default {
           ],
 
           thumb:
-            "sol/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/sol/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "sol/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sol/design-sol-e-solo-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "sol/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/sol/design-sol-e-solo-capa-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "sol/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sol/design-sol-e-solo-editorial-flyer-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "sol/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/sol/design-sol-e-solo-editorial-outdoor-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "sol/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sol/design-sol-e-solo-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "sol/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/sol/design-sol-e-solo-frota-sign-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -737,25 +737,25 @@ export default {
           ],
 
           thumb:
-            "studioma/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/studioma/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "studioma/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/studioma/design-sudio-magaldi-paisagismo-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "studioma/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/studioma/design-sudio-magaldi-paisagismo-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "studioma/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/studioma/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "studioma/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/studioma/design-sudio-magaldi-paisagismo-identidade-site-trecomunicacao-02.jpg",
               },
             ],
           ],
@@ -774,7 +774,7 @@ export default {
             },
           ],
 
-          thumb: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
+          thumb: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [
             { subTitle: "Identidade Visual " },
             { subTitle: "Café Marcéu" },
@@ -782,47 +782,47 @@ export default {
           outrosProjetos: [
             [
               {
-                fotos: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
               },
               {
-                fotos: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
-              },
-
-              {
-                fotos: "fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
               },
 
               {
-                fotos: "fazenda/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
+              },
+
+              {
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
               },
               {
-                fotos: "fazenda/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
             [
               {
                 fotos:
-                  "cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
               },
             ],
           ],
@@ -1035,10 +1035,10 @@ h4 {
 
   .description--popup {
     font-size: 14px;
-    
+
   }
-  
-  .description--height{
+
+  .description--height {
     min-height: 110px;
 
   }

@@ -1,8 +1,8 @@
 <template>
   <div class="sucesso">
     <div class="c-grafismos">
-      <img class="c-grafismo__1" src="grafismoSucesso_1.svg">
-      <img class="c-grafismo__2" src="grafismoSucesso.svg">
+      <img class="c-grafismo__1" src="imagens_site_tre_2023/grafismoSucesso_1.svg">
+      <img class="c-grafismo__2" src="imagens_site_tre_2023/grafismoSucesso.svg">
     </div>
     <div class="c-sucesso">
       <div class="sucesso__menssagem">
@@ -13,7 +13,7 @@
         </p>
       </div>
       <a href="/" @click="showSucesso" class="sucesso__voltar">Voltar</a>
-      <img class="sucesso__background" src="banner02.png">
+      <img class="sucesso__background" src="imagens_site_tre_2023/banner02.png">
     </div>
   </div>
 </template>

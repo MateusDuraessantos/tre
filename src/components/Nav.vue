@@ -2,7 +2,7 @@
   <nav>
     <div class="flex">
       <figure>
-        <img src="../assets/logoComNome.svg" />
+        <img src="imagens_site_tre_2023/assets/logoComNome.svg" />
       </figure>
       <ul @click="hashSemHash">
         <li><a href="#inicio">início</a></li>

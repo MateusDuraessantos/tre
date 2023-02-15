@@ -13,7 +13,7 @@
               </h1>
             </div>
             <figure>
-              <img class="img" src="../assets/banner/banner01.png" alt="Banner com folhas de bambu" />
+              <img class="img" src="imagens_site_tre_2023/banner/banner01.png" alt="Banner com folhas de bambu" />
             </figure>
           </div>
         </el-carousel-item>
@@ -28,7 +28,7 @@
               </h1>
             </div>
             <figure>
-              <img class="img" src="../assets/banner/banner02.png" alt="Banner com circulos e folhas de palmeira" />
+              <img class="img" src="imagens_site_tre_2023/banner/banner02.png" alt="Banner com circulos e folhas de palmeira" />
             </figure>
           </div>
         </el-carousel-item>
@@ -41,7 +41,7 @@
               </h1>
             </div>
             <figure>
-              <img class="img" src="../assets/banner/banner03.png" alt="Banner com varias formas geográficas " />
+              <img class="img" src="imagens_site_tre_2023/banner/banner03.png" alt="Banner com varias formas geográficas " />
             </figure>
           </div>
         </el-carousel-item>
@@ -58,7 +58,7 @@
               </h1>
             </div>
             <figure>
-              <img class="img" src="../assets/banner/banner04.png" alt="Banner com icones de varios clientes" />
+              <img class="img" src="imagens_site_tre_2023/banner/banner04.png" alt="Banner com icones de varios clientes" />
             </figure>
           </div>
         </el-carousel-item>
