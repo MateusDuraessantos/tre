@@ -20,7 +20,7 @@
         <input type="hidden" name="_next" value="http://tre.art.br/contato">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Messagem" required></textarea>
+        <textarea name="message" placeholder="Menssagem" required></textarea>
         <button class="enviar" type="submit">Enviar</button>
       </form>
     </section>
