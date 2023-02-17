@@ -34,7 +34,6 @@ export default {
   methods: {
     show() {
       this.showUp = !this.showUp
-      console.log('App!')
     }
   }
 };

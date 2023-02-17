@@ -46,7 +46,7 @@
 
             <el-carousel trigger="click" arrow="always">
               <el-carousel-item v-for="(dataInfos, index) in projetos[indexOfTitles]
-              .outrosProjetos[indexOfSubtitle]" :key="index">
+                .outrosProjetos[indexOfSubtitle]" :key="index">
                 <div class="img_container">
                   <img :src="dataInfos.fotos" :key="index" />
                 </div>
@@ -61,7 +61,7 @@
           <h4 style="padding-top: 12px;">Outros projetos</h4>
           <div class="outros">
             <div @click="changeNumber(index)" v-for="(dataInfos, index) in projetos[indexOfTitles]
-            .outrosProjetos" :key="index">
+              .outrosProjetos" :key="index">
               <span v-for="(thumbOutrosProjetos, index) in dataInfos[0]" :key="index">
                 <img class="trocarProjeto" :src="thumbOutrosProjetos" />
               </span>
@@ -82,48 +82,38 @@ export default {
       s: null,
 
       projetos: [
-        /* Palafita */
+
+        // 4 Artes 
         {
           titleProject: [
-            { princialTitle: "Palafita" },
+            { princialTitle: "4 Artes" },
             {
               descricao:
-                [["A marca construída para a designer de interiores Nathalie, tem um processo de cocriação muito enriquecedor para as partes envolvidas. Projetamos e posicionamos os serviços gerando novas vertentes e desdobramentos para o negócio e transmitindo os valores do pessoal para o empresarial de maneira limpa e amigável."]],
+                [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
             },
           ],
 
           thumb:
-            "imagens_site_tre_2023/palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "imagens_site_tre_2023/palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/palafita/design-palafita-editorial-folder-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/palafita/design-palafita-editorial-folder-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/palafita/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/palafita/design-palafita-identidade-papelaria-cartao-visita-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/palafita/design-palafita-identidade-web-site-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-03.jpg",
               },
             ],
           ],
         },
+
         /* Abrinq */
         {
           titleProject: [
@@ -135,13 +125,13 @@ export default {
           ],
 
           thumb:
-            "imagens_site_tre_2023/abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
+            "imagens_site_tre_2023/abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "imagens_site_tre_2023/abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.png",
+                  "imagens_site_tre_2023/abrinq/design-abrinq-capa-editorial-relatorios-trecomunicacao-01.jpg",
               },
               {
                 fotos:
@@ -169,13 +159,13 @@ export default {
           ],
 
           thumb:
-            "imagens_site_tre_2023/black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
+            "imagens_site_tre_2023/black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "imagens_site_tre_2023/black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.png",
+                  "imagens_site_tre_2023/black_dog/design-black-dog-capa-editorial-cartaz-trecomunicacao-01.jpg",
               },
               {
                 fotos:
@@ -192,6 +182,95 @@ export default {
               {
                 fotos:
                   "imagens_site_tre_2023/black_dog/design-black-dog-merchandising-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+
+        // BlueBe School
+        {
+          titleProject: [
+            { princialTitle: "BlueBe School" },
+            {
+              descricao:
+                [["A escola com linha educacional baseada na pedagogia de Reggio Emilia nos procurou para ajustar sua comunicação, e sua linha pedagógica foi a inspiração e parte da pesquisa para a linguagem desta marca que também recebeu um novo estudo de naming."]],
+            },
+          ],
+
+          thumb:
+            "imagens_site_tre_2023/bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /* CeC */
+        {
+          titleProject: [
+            { princialTitle: "C&C" },
+            {
+              descricao:
+                [["O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor."]],
+            },
+          ],
+
+          thumb:
+            "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cec/design-cec-casanova-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cec/design-cec-casanova-identidade-embalagem-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cec/design-cec-metropac-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cec/design-cec-smart-identidade-embalagem-trecomunicacao-01.jpg",
               },
             ],
           ],
@@ -250,52 +329,53 @@ export default {
             ],
           ],
         },
-        /* CeC */
+        /* Clube Paineiras do Morumby */
         {
           titleProject: [
-            { princialTitle: "CeC" },
+            { princialTitle: "Clube Paineiras do Morumby" },
             {
               descricao:
-                [["O desenvolvimento de embalagens por uma década para a C&C deu visibilidade e posicionamento para as marcas que criamos. Nós da Tre definimos com a diretoria da empresa onde queríamos chegar com as marcas. Sem publicidade externa apenas utilizando recursos internos das lojas, alcançamos o resultado com PDV e uma estratégia de embalagens, fidelizando clientes e transformando a loja em destino para aquele consumidor."]],
+                [["O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano."]],
             },
           ],
 
           thumb:
-            "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+            "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
                 fotos:
-                  "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-fachada-loja-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cec/design-cec-capa-xhara-identidade-merchandising-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cec/design-cec-casanova-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-livro-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cec/design-cec-casanova-identidade-embalagem-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-revista-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cec/design-cec-metropac-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-revista-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cec/design-cec-smart-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/paineiras/design-paineiras-sinalizacao-trecomunicacao-01.jpg",
               },
+
             ],
           ],
         },
-        /* EXP */
+        /* EXP Advisors */
         {
           titleProject: [
-            { princialTitle: "EXP" },
+            { princialTitle: "EXP Advisors" },
             {
               descricao:
                 [["É uma empresa de consultoria e gerenciamento de obras de alta qualidade em arquitetura. Sua imagem já possuía índices e valores bem posicionados mas não alinhados com a identidade de marca. Esse foi nosso desafio e projeto realizado."]],
@@ -332,322 +412,72 @@ export default {
             ],
           ],
         },
-        /* Livro Nuestra Familia */
+        // Fazenda Marilio 
         {
           titleProject: [
-            { princialTitle: "Livro Nuestra Familia" },
+            { princialTitle: "Fazenda Marílio" },
             {
-              descricao:
-                [["A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material."]],
+              descricao: [[
+                'A Fazenda Marílio contratou-nos para desenvolver sua identidade visual. Para esta produtora de café de alta qualidade, optamos por retratar uma "janela para o campo", permitindo que seus apreciadores possam visualizar a plantação desta cultura.',
+                'A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.',
+              ]
+              ]
             },
           ],
 
-          thumb:
-            "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
+          thumb: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [
+            { subTitle: "Identidade Visual " },
+            { subTitle: "Marcéu Café" },
+          ],
           outrosProjetos: [
             [
               {
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
+              },
+
+              {
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
+              },
+
+              {
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
+              },
+            ],
+            [
+              {
                 fotos:
-                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
               },
             ],
           ],
         },
-        /* OTOH */
-        {
-          titleProject: [
-            { princialTitle: "Otoh" },
-            {
-              descricao:
-                [["Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras ”O”."]],
-            },
-          ],
-
-          thumb: "imagens_site_tre_2023/otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos: "imagens_site_tre_2023/otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/otoh/design-otoh-editorial-agenda-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/otoh/design-otoh-editorial-cartaz-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/otoh/design-otoh-editorial-manual-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/otoh/design-otoh-identidade-web-site-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /* Paineiras */
-        {
-          titleProject: [
-            { princialTitle: "Paineiras" },
-            {
-              descricao:
-                [["O clube Paineiras do Morumby teve nossa contribuição por 4 anos como gestor/diretor de marketing e projetos executivos, onde desenvolvemos uma revitalização total, da reestruturação da imagem da marca a sinalização e novo conceito editorial para sua revista e site, gestão 360, na ocasião, comemorando os 60 anos do clube paulistano."]],
-            },
-          ],
-
-          thumb:
-            "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/paineiras/design-paineiras-capa-editorial-manual-identidade-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-livro-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-livro-trecomunicacao-03.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-revista-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/paineiras/design-paineiras-editorial-revista-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/paineiras/design-paineiras-sinalizacao-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-        /* Renner Alchemia */
-        {
-          titleProject: [
-            { princialTitle: "Renner Alchemia" },
-            {
-              descricao:
-                [["O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil."]],
-            },
-          ],
-
-          thumb:
-            "imagens_site_tre_2023/renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/renner/design-renner-alchemia-embalagem-trecomunicacao-02.jpg",
-              },
-            ],
-          ],
-        },
-        /* SAP */
-        {
-          titleProject: [
-            { princialTitle: "SAP" },
-            {
-              descricao:
-                [["Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes; Conjunto de banners para apresentação de novos conteúdos de podcast no Itunes e Google Play."]],
-            },
-          ],
-
-          thumb: "imagens_site_tre_2023/sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/sap/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/sap/design-sap-identidade-podcast-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-
-        /* Temra */
-        {
-          titleProject: [
-            { princialTitle: "Temra" },
-            {
-              descricao:
-                [['O cuidado com a linguagem das imagens que produzimos para TEMRA fala muito de sua essência, simplicidade e tecnologia – fórmula campeã para criar animais com saúde.A linha de embalagem ganhou um toque de simplicidade e autenticidade: "somos o que somos, somos TEMRA" essa é a mensagem a ser passada pela identidade de marca, acompanhada de sua tagline "a nobreza do rústico".']],
-            },
-          ],
-
-          thumb:
-            "imagens_site_tre_2023/temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/temra/design-temra-identidade-embalagem-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/temra/design-temra-identidade-papelaria-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/temra/design-temra-identidade-site-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-
-        // 4 Artes 
-        {
-          titleProject: [
-            { princialTitle: "4 Artes" },
-            {
-              descricao:
-                [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
-            },
-          ],
-
-          thumb:
-            "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-03.jpg",
-              },
-            ],
-          ],
-        },
-
-        // BlueBe 
-        {
-          titleProject: [
-            { princialTitle: "BlueBe" },
-            {
-              descricao:
-                [["A escola com linha educacional baseada na pedagogia de Emilia Reggio nos procurou para ajustar sua comunicação, e sua linha pedagógica foi a inspiração e parte da pesquisa para a linguagem desta marca que também recebeu um novo estudo de naming."]],
-            },
-          ],
-
-          thumb:
-            "imagens_site_tre_2023/bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-capa-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-editorial-folheto-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-editorial-manual-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-papelaria-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-papelaria-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-paredes-sociais-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/bluebe/design-bluebe-identidade-web-site-trecomunicacao-01.jpg",
-              },
-            ],
-          ],
-        },
-
-        // TaoTao
-        {
-          titleProject: [
-            { princialTitle: "Tao Tao" },
-            {
-              descricao:
-                [["Uma marca lúdica e cheia de empatia (um aceno) que cria surpresa e incita curiosidade. A ideia é que sua comunicação de marca abrace o imaginário de crianças."]],
-            },
-          ],
-
-          thumb:
-            "imagens_site_tre_2023/taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
-          outrosProjetos: [
-            [
-              {
-                fotos:
-                  "imagens_site_tre_2023/taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-01.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-02.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-03.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-04.jpg",
-              },
-            ],
-          ],
-        },
-
         // Harmonia
         {
           titleProject: [
@@ -682,11 +512,175 @@ export default {
             ],
           ],
         },
-
-        // SOL SOLO
+        /* Livro Nuestra Familia */
         {
           titleProject: [
-            { princialTitle: "SOL & SOLO" },
+            { princialTitle: "Livro Nuestra Familia" },
+            {
+              descricao:
+                [["A conceituação, criação, ensaio fotográfico de peças e recordações pessoais, desenvolvimento editorial e também o acompanhamento gráfico para o livro da família Medrano foi um presente para nossa equipe de design. Um projeto cheio de história e emoção. Adoramos desenvolver esse tipo de material."]],
+            },
+          ],
+
+          thumb:
+            "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-capa-editorial-livro-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/livro_nuestra_familia/design-nuestra-familia-editorial-livro-trecomunicacao-03.jpg",
+              },
+            ],
+          ],
+        },
+
+        /* Otoh */
+        {
+          titleProject: [
+            { princialTitle: "Otoh" },
+            {
+              descricao:
+                [["Otoh é um projeto de identidade de marca, um produto/serviço desenvolvido para o núcleo de inovação da Harmonia Global. A marca tem como força a tipografia Bold e o detalhe da forma de seus sensores como diferencial em uma das suas letras “O”."]],
+            },
+          ],
+
+          thumb: "imagens_site_tre_2023/otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos: "imagens_site_tre_2023/otoh/design-otoh-capa-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/otoh/design-otoh-editorial-agenda-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/otoh/design-otoh-editorial-cartaz-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/otoh/design-otoh-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/otoh/design-otoh-identidade-web-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        /* Palafita */
+        {
+          titleProject: [
+            { princialTitle: "Palafita" },
+            {
+              descricao:
+                [["A marca construída para a designer de interiores Nathalie, tem um processo de cocriação muito enriquecedor para as partes envolvidas. Projetamos e posicionamos os serviços gerando novas vertentes e desdobramentos para o negócio e transmitindo os valores do pessoal para o empresarial de maneira limpa e amigável."]],
+            },
+          ],
+
+          thumb:
+            "imagens_site_tre_2023/palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/palafita/design-palafita-capa-identidade-segmentos-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/palafita/design-palafita-editorial-folder-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/palafita/design-palafita-editorial-folder-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/palafita/design-palafita-editorial-manual-identidade-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/palafita/design-palafita-identidade-papelaria-cartao-visita-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/palafita/design-palafita-identidade-web-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+
+        /* Renner Alchemia */
+        {
+          titleProject: [
+            { princialTitle: "Renner Alchemia" },
+            {
+              descricao:
+                [["O grupo de moda e acessórios Renner, nos chamou para revitalizar algumas embalagens de perfumes, hidratantes e kits de cosméticos sazonais para sua linha de cosméticos Alchemia, uma responsabilidade e tanto, sendo produzido em média 4 milhões de frascos entre seus produtos distribuídos por todo Brasil."]],
+            },
+          ],
+
+          thumb:
+            "imagens_site_tre_2023/renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/renner/design-renner-alchemia-capa-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/renner/design-renner-alchemia-embalagem-trecomunicacao-02.jpg",
+              },
+            ],
+          ],
+        },
+        /* SAP */
+        {
+          titleProject: [
+            { princialTitle: "SAP" },
+            {
+              descricao:
+                [["Um projeto gráfico de peso para SAP. Proposta de adequação visual de sua plataforma online voltada a clientes. Conjunto de banners para apresentação de novos conteúdos de podcast no iTunes e Google Play."]],
+            },
+          ],
+
+          thumb: "imagens_site_tre_2023/sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/sap/design-sap-capa-identidade-evento-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/sap/design-sap-identidade-iconografia-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/sap/design-sap-identidade-podcast-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+        // Sol&Solo
+        {
+          titleProject: [
+            { princialTitle: "Sol&Solo" },
             {
               descricao:
                 [['A empresa de orgânicos Sol & Solo tinha um grande problema de sonoridade por conta da sua grafia "solesolo". Esse fato fazia entender uma única palavra e por mais que isso fosse explicado, as pessoas erravam sua pronúncia. Para dar um novo posicionamento à questão, realizamos um estudo para o naming utilizando o "&" comercial e redesenhamos a marca e sua identidade visual.']],
@@ -760,73 +754,79 @@ export default {
             ],
           ],
         },
-
-        /* Fazenda Marilio */
+        // TaoTao
         {
           titleProject: [
-            { princialTitle: "Fazenda Marílio" },
+            { princialTitle: "Tao Tao" },
             {
-              descricao: [[
-                'A Fazenda Marílio contratou-nos para desenvolver sua identidade visual. Para esta produtora de café de alta qualidade, optamos por retratar uma "janela para o campo", permitindo que seus apreciadores possam visualizar a plantação desta cultura.',
-                'A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.',
-              ]
-              ]
+              descricao:
+                [["Uma marca lúdica e cheia de empatia (um aceno) que cria surpresa e incita curiosidade. A ideia é que sua comunicação de marca abrace o imaginário de crianças."]],
             },
           ],
 
-          thumb: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [
-            { subTitle: "Identidade Visual " },
-            { subTitle: "Café Marcéu" },
-          ],
+          thumb:
+            "imagens_site_tre_2023/taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
           outrosProjetos: [
             [
               {
-                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
-              },
-              {
-                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-02.jpg",
-              },
-
-              {
-                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-03.jpg",
-              },
-
-              {
-                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-papelaria-trecomunicacao-01.jpg",
-              },
-              {
-                fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
-              },
-            ],
-            [
-              {
                 fotos:
-                  "imagens_site_tre_2023/cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-capa-identidade-projetos-especiais-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cafe/design-cafe-marilio-capa-identidade-embalagem-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-01.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-01.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-02.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-02.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-03.jpg",
               },
               {
                 fotos:
-                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-03.jpg",
-              },
-              {
-                fotos:
-                  "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
+                  "imagens_site_tre_2023/taotao/design-taotao-editorial-trecomunicacao-04.jpg",
               },
             ],
           ],
         },
+        /* Temra */
+        {
+          titleProject: [
+            { princialTitle: "Temra" },
+            {
+              descricao:
+                [['O cuidado com a linguagem das imagens que produzimos para TEMRA fala muito de sua essência, simplicidade e tecnologia – fórmula campeã para criar animais com saúde. A linha de embalagem ganhou um toque de simplicidade e autenticidade: "somos o que somos, somos TEMRA" essa é a mensagem a ser passada pela identidade de marca, acompanhada de sua tagline "a nobreza do rústico".']],
+            },
+          ],
+
+          thumb:
+            "imagens_site_tre_2023/temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
+          titulosCarrossel: [{ subTitle: "" }],
+          outrosProjetos: [
+            [
+              {
+                fotos:
+                  "imagens_site_tre_2023/temra/design-temra-capa-identidade-embalagem-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/temra/design-temra-identidade-embalagem-trecomunicacao-02.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/temra/design-temra-identidade-papelaria-trecomunicacao-01.jpg",
+              },
+              {
+                fotos:
+                  "imagens_site_tre_2023/temra/design-temra-identidade-site-trecomunicacao-01.jpg",
+              },
+            ],
+          ],
+        },
+
       ],
     };
   },
@@ -834,29 +834,27 @@ export default {
   methods: {
     changeNumber(x) {
       this.indexOfSubtitle = x;
-      // console.log(this.indexOfSubtitle);
     },
     pop(n) {
       this.upPopup = !this.upPopup;
-      // console.log(this.upPopup);
       this.indexOfTitles = n;
+      const nav = document.querySelector('nav')
       if (this.upPopup == true) {
-        document.querySelector('nav').classList = 'mg-right-nav'
+        nav.classList = 'mg-right-nav'
         document.body.classList.add("overflowOn");
       } else {
-        document.querySelector('nav').classList.remove('mg-right-nav')
+        nav.classList.remove('mg-right-nav')
         document.body.classList.remove("overflowOn");
       }
       this.indexOfSubtitle = 0;
     },
     overlay(s) {
       var a = s.target.classList[0];
-      // console.log(a);
       if (a == "overlay") {
         this.upPopup = !this.upPopup;
         document.body.classList.remove("overflowOn");
         this.s = document.querySelector(".description--popup")
-        console.log(this.s.scrollHeight);
+        document.querySelector('nav').classList.remove('mg-right-nav')
       }
     },
   },
