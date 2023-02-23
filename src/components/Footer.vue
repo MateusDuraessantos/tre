@@ -16,13 +16,29 @@
           </a>
         </div>
       </div>
-      <form class="container_input" action="https://formsubmit.co/contato@tre.art.br" method="POST">
-        <input type="hidden" name="_next" value="http://tre.art.br/contato">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Menssagem" required></textarea>
-        <button class="enviar" type="submit">Enviar</button>
-      </form>
+
+      <span>
+        <form id="myForm" class="container_input" action="https://formsubmit.co/contato@tre.art.br" method="POST">
+
+          <!-- Faz o navegar voltar para a tela principal após envio do formulário -->
+          <input type="hidden" name="_next" value="https://tre.art.br/">
+
+          <input type="hidden" name="_captcha" value="false">
+          <!-- NAME -->
+          <input type="text" id="nome" name="nome" placeholder="Nome" required>
+          <!-- EMAIL -->
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <!-- MENSSAGEM -->
+          <textarea name="menssagem" id="menssagem" placeholder="Menssagem" required></textarea>
+        </form>
+
+        <div class="container-reCaptcha">
+          <div class="g-recaptcha" data-sitekey="6LeERKwUAAAAANv2Yaeh-2pWoAjC2hNRM9B-orki" data-size="normal"></div>
+        </div>
+
+        <!-- DIV button PARA ATIVAR O SUBMIT -->
+        <div class="enviar" @click="testar" type="submit" name="enviar">enviar</div>
+      </span>
     </section>
   </footer>
 </template>
@@ -30,10 +46,50 @@
 <script>
 export default {
   name: "Footer",
+  mounted() {
+    //ADICIONA NA TAG <head></head> O LINK PARA FUNCIONALIDADE DO reCAPTCHA
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js?hl=pt-BR';
+    document.head.appendChild(script);
+  
+
+    //ADICIONA NA TAG <head></head> O LINK PARA FUNCIONALIDADE DO reCAPTCHA
+    const scriptApi = document.createElement('script');
+    scriptApi.setAttribute('src', 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit')
+    scriptApi.setAttribute('async', '')
+    scriptApi.setAttribute('defer', '')
+    document.head.appendChild(scriptApi);
+  },
+  methods: {
+    testar() {
+      //PEGA OS CAMPOS PARA EVERIFICAR SE ESTÃO PREENCHIDOS
+      const email = document.getElementById('email')
+      const nome = document.getElementById('nome')
+      const menssagem = document.getElementById('menssagem')
+
+      //VALIDA SE TODOS OS CAMPOS FORAM PREENCHIDOS
+      if (grecaptcha.getResponse() === "" || email.value === '' || nome.value === '' || menssagem.value === '') {
+        alert('Preencha os campos para prosseguir')
+        
+      //SE ESTIVEREM PREENCHIODS, PERMITE O ENVIO
+      } else {
+        console.log('campos preenchidos')
+        document.getElementById('myForm').submit()
+      }
+    },
+  }
 };
 </script>
 
 <style scoped>
+.container-reCaptcha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 9px;
+}
+
 footer {
   position: relative;
   margin-top: 80px;
@@ -143,6 +199,9 @@ input:focus {
 }
 
 .enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #28b2ed;
   padding: 0;
   border: none;

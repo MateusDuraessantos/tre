@@ -2,29 +2,34 @@
   <section id="projetos">
     <h2>projetos</h2>
 
+    <!-- content_projetos LISTA AS CAPAS DOS PROJETOS NA GRID -->
     <div class="content_projetos">
-      <div v-for="(projetosAll, index) in projetos" :key="index">
-        <img class="thumb" :src="projetosAll.thumb" @click="pop(index)" />
-      </div>
+      <img class="thumb" v-for="(projetosAll, index) in projetos" :key="index" :src="projetosAll.thumb"
+        @click="pop(index)" />
     </div>
-    <!-- <div class="overlay" v-if="upPopup"> -->
+
+    <!-- overlay CONTAINER DOS POPUPS -->
     <div class="overlay" @click="overlay" v-if="upPopup">
       <div class="pop_content">
         <button class="close" @click="pop()">
           <img src="imagens_site_tre_2023/assets/icons/close.svg" alt="close" />
         </button>
         <div class="grid_prof">
-          <!-- 1° -->
-          <div class="grid_prof--first">
-            <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
-              <h3>{{ dataInfos.princialTitle }}</h3>
-            </div>
 
+          <!-- CONTAINER DO TÍTULO, SUBTITULO E DESCRIÇÃO DOS PROJETOS -->
+          <div class="grid_prof--first">
+
+            <!-- TITULO PRINCIPAL -->
+            <h3 v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">{{
+              dataInfos.princialTitle }}</h3>
+
+            <!-- SUBTITULO -->
             <h4 v-for="(subTitleProject, index) in projetos[indexOfTitles].titulosCarrossel[indexOfSubtitle]"
               :key="index">
               {{ subTitleProject }}
             </h4>
 
+            <!-- DESCRIÇÃO -->
             <div v-for="(dataInfos, index) in projetos[indexOfTitles].titleProject" :key="index">
               <div class="description--popup" v-for="(descricoesProjetc, index) in dataInfos.descricao" :key="index">
 
@@ -41,24 +46,23 @@
               </div>
             </div>
           </div>
-          <!-- 2° -->
-          <div class="grid_prof--second">
 
+          <div class="grid_prof--second">
+            <!-- CARROSSEL DOS PROJETOS -->
             <el-carousel trigger="click" arrow="always">
               <el-carousel-item v-for="(dataInfos, index) in projetos[indexOfTitles]
                 .outrosProjetos[indexOfSubtitle]" :key="index">
-                <div class="img_container">
-                  <img :src="dataInfos.fotos" :key="index" />
-                </div>
+                <img class="img_container" :src="dataInfos.fotos" :key="index" />
               </el-carousel-item>
             </el-carousel>
           </div>
-
         </div>
 
+        <!-- SE HOVER MAIS DE UM PROJETO, ADICIONA A THUMB DELES DENTRO DO POPUP -->
         <span v-if="projetos[indexOfTitles].outrosProjetos.length > 1">
 
           <h4 style="padding-top: 12px;">Outros projetos</h4>
+
           <div class="outros">
             <div @click="changeNumber(index)" v-for="(dataInfos, index) in projetos[indexOfTitles]
               .outrosProjetos" :key="index">
@@ -80,25 +84,45 @@ export default {
       indexOfTitles: 0,
       indexOfSubtitle: 0,
       s: null,
-
       projetos: [
 
         // 4 Artes 
         {
           titleProject: [
+            // princialTitle: TÍTULO PRINCIPAL DO PROJETO
             { princialTitle: "4 Artes" },
             {
+              //descricao DESCRIÇÃO DO PROJETO
+
+              //A QUANTIDADE DE PROJETOS DEVE SER IGUAL A QUANTIDADE DE DESCRIÇÕES
+
               descricao:
-                [["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
+                [
+                  // DESCRIÇÃO DO PRIMEIRO PROJETO
+                  ["Marca/selo para produtos cerâmicos da artista plástica Solange Braile, a ideia é que possa ser cravada/marcada em baixo relevo em peças diversas de suas coleções."]],
             },
           ],
-
+          //thumb CAPA PRINCIPAL DO PROJETO
           thumb:
             "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
-          titulosCarrossel: [{ subTitle: "" }],
+
+
+
+          titulosCarrossel: [
+            //subTitle SUBTITULOS DOS PROJETOS  
+            //A QUANTIDADE DE subTitles DEVE SER IGUAL A QUANTIDADE DE PROJETOS
+            //CASO O PROJETO NÃO TENHA SUBTITULO, DEIXAR O CAMPO VAZIO: subTitle: ""
+            { subTitle: "" }],
+
+
+          //outrosProjetos TODOS OS PROJETOS DENTRO DO POPUP
           outrosProjetos: [
+            //A QUANTIDADE DE PROJETOS DEVE SER IGUAL A QUANTIDADE DE DESCRIÇÕES
+            //CASO O PROJETO TENHA MAIS DE UM PROJETO, ADICIONAR MAIS UMA ARRAY, SENDO A ESTRUTURA ABAIXO
             [
+              //ARRAY 1
               {
+                //fotos SÃO AS IMAGENS QUE APARECEM DENTRO DO CARROSSEL DO POPUP
                 fotos:
                   "imagens_site_tre_2023/artes/design-4-artes-capa-identidade-trecomunicacao-01.jpg",
               },
@@ -111,9 +135,9 @@ export default {
                   "imagens_site_tre_2023/artes/design-4-artes-identidade-trecomunicacao-03.jpg",
               },
             ],
+            //PRÓXIMO ARRAY
           ],
         },
-
         /* Abrinq */
         {
           titleProject: [
@@ -418,7 +442,11 @@ export default {
             { princialTitle: "Fazenda Marílio" },
             {
               descricao: [[
+
+                //A QUANTIDADE DE PROJETOS DEVE SER IGUAL A QUANTIDADE DE DESCRIÇÕES
+                //DESCRIÇÃO DO PRIMEIRO PROJETO
                 'A Fazenda Marílio contratou-nos para desenvolver sua identidade visual. Para esta produtora de café de alta qualidade, optamos por retratar uma "janela para o campo", permitindo que seus apreciadores possam visualizar a plantação desta cultura.',
+                //DESCRIÇÃO DO SEGUNDO PROJETO
                 'A marca para linha de cafés especiais premiados e também a criação das embalagens, foi fruto da pesquisa e imersão feita com a liderança da fazenda respondendo a uma demanda peculiar e inovadora.',
               ]
               ]
@@ -427,12 +455,18 @@ export default {
 
           thumb: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
           titulosCarrossel: [
+            //A QUANTIDADE DE SUBTITULOS DEVE SER IGUAL A QUANTIDADE DE DESCRIÇÕES E PROJETOS
+            //SUBTITULO DO PRIMEIRO PROJETO
             { subTitle: "Identidade Visual " },
+            //SUBTITULO DO SEGUNDO PROJETO
             { subTitle: "Marcéu Café" },
           ],
           outrosProjetos: [
+            //A QUANTIDADE DE PROJETOS DEVE SER IGUAL A QUANTIDADE DE DESCRIÇÕES E SUBTITULOS
+            //ARRAY 1
             [
               {
+                //fotos SÃO AS IMAGENS QUE APARECEM DENTRO DO CARROSSEL DO POPUP
                 fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-capa-identidade-trecomunicacao-01.jpg",
               },
               {
@@ -450,6 +484,7 @@ export default {
                 fotos: "imagens_site_tre_2023/fazenda/design-fazenda-marilio-identidade-web-site-trecomunicacao-01.jpg",
               },
             ],
+            //ARRAY 2
             [
               {
                 fotos:
@@ -476,6 +511,7 @@ export default {
                   "imagens_site_tre_2023/cafe/design-cafe-marilio-identidade-redes-sociais-trecomunicacao-04.jpg",
               },
             ],
+            //PRÓXIMO ARRAY 
           ],
         },
         // Harmonia
@@ -898,6 +934,8 @@ h4 {
   overflow-y: auto;
 }
 
+
+
 .thumb {
   cursor: pointer;
   width: 100%;
@@ -936,7 +974,7 @@ h4 {
 .description--popup {
   font-size: 16px;
   line-height: 17px;
-  /* height: 100px; */
+
 }
 
 .close {
@@ -975,9 +1013,10 @@ h4 {
 }
 
 .img_container {
-  width: 100%;
   height: 100%;
+  margin: auto;
   display: flex;
+  object-fit: contain;
   justify-content: center;
 }
 
