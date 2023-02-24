@@ -31,6 +31,18 @@ export default {
       showUp: true
     }
   },
+  created() {
+
+    //ADICIONA NA TAG <head></head> A TAG <title> PARA RENOMEAR A ABA
+    document.title = 'Tre'
+
+    //ADICIONA NA TAG <head></head> A TAG <link> PARA ALTERAR O FAVICON
+    const favIcon = document.createElement('link')
+    favIcon.setAttribute('rel', 'icon')
+    favIcon.setAttribute('type', 'image/x-icon')
+    favIcon.setAttribute('href', 'imagens_site_tre_2023/treLogo.png')
+    document.head.appendChild(favIcon)
+  },
   methods: {
     show() {
       this.showUp = !this.showUp

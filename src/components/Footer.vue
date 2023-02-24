@@ -8,7 +8,7 @@
         <div>
           <div class="contato">
             <img src="imagens_site_tre_2023/assets/icons/email.svg" />
-            <p>contato@tre.art.br</p>
+            <p>atendimento@tre.art.br</p>
           </div>
           <a href="https://www.instagram.com/trecomunicacao/" target="blank_" class="contato">
             <img src="imagens_site_tre_2023/assets/icons/insta.svg" />
@@ -18,7 +18,7 @@
       </div>
 
       <span>
-        <form id="myForm" class="container_input" action="https://formsubmit.co/contato@tre.art.br" method="POST">
+        <form id="myForm" class="container_input" action="https://formsubmit.co/atendimento@tre.art.br" method="POST">
 
           <!-- Faz o navegar voltar para a tela principal após envio do formulário -->
           <input type="hidden" name="_next" value="https://tre.art.br/">
